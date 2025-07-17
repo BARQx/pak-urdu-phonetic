@@ -1,7 +1,8 @@
 Pak Urdu Phonetic - Change History
-====================
+==================================
 
 1.0 (2025-07-17)
 ----------------
-* Created by Nashit Ahmed Barq
-* Support for Linux, Windows and MacOS (Keyman)
+* Initial release by Nashit Ahmad Barq  
+* Port of Pak Urdu Installer layout for Keyman  
+* Supports Linux, Windows, and macOS via Keyman

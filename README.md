@@ -1,3 +1,17 @@
+> A phonetic Urdu keyboard layout for people who care deeply about the script — and the system they type it on.
+> 
+> As someone who regularly works in Urdu — whether writing, researching, or just chatting — I’ve always relied on Pak Urdu Installer on Windows. Its phonetic layout made typing fast, intuitive, and effortless. For years, it just worked.
+> 
+> But every time I tried to seriously use Linux (especially on my laptop), the lack of a polished, feature-rich Urdu layout always pulled me back. No layout matched the familiarity or usability of what we had on Windows.
+> 
+> This project is my attempt to bridge that gap.
+> 
+> It’s a faithful port of Pak Urdu Installer — not just a clone, but a layout that feels like home for Urdu users across platforms: Linux, Windows, and even the macOS.
+> 
+> If you’ve ever wanted to type Urdu properly on Linux and couldn’t find “the one,” this might be it.
+> 
+> — Nashit Ahmed Barq
+
 # Pak Urdu Phonetic
 
 A cross-platform Urdu keyboard layout for Pakistani Urdu typing, ported from the original Windows-only Pak Urdu Installer layout by [mBilalm](https://mbilalm.com/urdu-installer.php). Now available in **Keyman format** for **Linux**, **Windows** and **macOS** systems.
@@ -13,7 +27,7 @@ It's designed specifically for Pakistani Urdu typing conventions and works exact
 
 ## 🌟 Features
 
-- **Cross-platform**: Works on Linux and Windows
+- **Cross-platform**: Works on Linux, Windows and macOS
 - **Complete Urdu support**: All Urdu characters, diacritics, and symbols
 - **Pakistani phonetic standard**: Matches original Pak Urdu Installer behavior
 - **Easy installation**: Simple one-click install package
@@ -52,20 +66,6 @@ sudo apt install keyman
 - Click it to switch between keyboards
 - Select "Pak Urdu" to type in Urdu
 
-### 🍎 macOS
-
-> **Prerequisites:** Install [Keyman for macOS](https://keyman.com/mac/) first
-
-1. 📦 Download `pak_urdu_phonetic.kmp` from [**Releases**](../../releases)
-2. 🖱️ **Double-click** the `.kmp` file
-3. ✅ Click **"Install"** when Keyman prompts
-4. 🎉 Ready to type!
-
-**To activate:**
-- Click the Keyman icon in your menu bar
-- Select "Pak Urdu Phonetic"
-- Start typing in any application
-
 ### 🪟 For Windows Users
 
 **Prerequisites:**
@@ -81,6 +81,20 @@ sudo apt install keyman
 1. Click the Keyman Desktop icon in your system tray
 2. Select "Pak Urdu Phonetic" from the keyboard list
 3. Start typing in any application
+
+### 🍎 macOS
+
+> **Prerequisites:** Install [Keyman for macOS](https://keyman.com/mac/) first
+
+1. 📦 Download `pak_urdu_phonetic.kmp` from from [Releases](../../releases)
+2. 🖱️ **Double-click** the `.kmp` file
+3. ✅ Click **"Install"** when Keyman prompts
+4. 🎉 Ready to type!
+
+**To activate:**
+- Click the Keyman icon in your menu bar
+- Select "Pak Urdu Phonetic"
+- Start typing in any application
 
 That's it! Start typing in any app.
 

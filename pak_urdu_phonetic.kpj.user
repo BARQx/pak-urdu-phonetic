@@ -40,10 +40,6 @@
       <Debug>False</Debug>
     </FileState>
     <FileState>
-      <ID>id_cad5f1516c55f4d81379b814aa8dda0e</ID>
-      <FullPath>C:\pak-urdu-installer-linux-port\source\pak_urdu_phonetic.kmx</FullPath>
-    </FileState>
-    <FileState>
       <ID>id_d7201d63d42eeb887ef366c086237765</ID>
       <FullPath>C:\pak-urdu-installer-linux-port\source\pak_urdu_phonetic.kps</FullPath>
       <IDEState>
@@ -62,6 +58,10 @@
     <FileState>
       <ID>id_c296b5df3dc126e219e0173fcbc1baec</ID>
       <FullPath>C:\pak-urdu-installer-linux-port\source\..\LICENSE.md</FullPath>
+    </FileState>
+    <FileState>
+      <ID>id_d92ed8da39030f98fef1569fbf913619</ID>
+      <FullPath>C:\pak-urdu-installer-linux-port\source\..\build\pak_urdu_phonetic.kmx</FullPath>
     </FileState>
   </FileStates>
   <MRU>
