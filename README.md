@@ -322,18 +322,20 @@ That's it! Start typing in any app.
 ### Project Structure
 
 ```
-pak-urdu-phonetic-linux-port/
-├── 📝 HISTORY.md                    # Version history
-├── 📄 LICENSE.md                    # MIT License
-├── 📖 README.md                     # Documentation
-├── 🛠️ pak_urdu_phonetic.kpj        # Keyman project
-├── 📦 build/                        # Compiled files
-│   └── pak_urdu_phonetic.kmp
-└── 💻 source/                       # Source code
-    ├── pak_urdu_phonetic.kmn       # Keyboard logic
-    ├── pak_urdu_phonetic.kps       # Package definition
-    ├── readme.htm                   # Help docs
-    └── welcome.htm                  # Welcome screen
+pak-urdu-phonetic/
+├── 📦 build/                          # Compiled output
+│   ├── 💻 pak_urdu_phonetic.kmp       # ✅ Installable keyboard package
+│   └── 🧱 pak_urdu_phonetic.kmx       # Compiled binary layout
+├── 💾 source/                         # Source files (editable)
+│   ├── 🧠 pak_urdu_phonetic.kmn       # Keyboard layout logic
+│   ├── 📦 pak_urdu_phonetic.kps       # Package definition for .kmp
+│   ├── 📘 readme.htm                  # Help/instructions
+│   └── 📗 welcome.htm                 # Help/instructions
+├── 📝 HISTORY.md                      # Version history
+├── 📄 LICENSE.md                      # License (MIT)
+├── 🛠️ pak_urdu_phonetic.kpj           # Keyman project file
+├── ⚙️ pak_urdu_phonetic.kpj.user      # User-specific project settings
+└── 📖 README.md                       # Project documentation (you’re here)
 ```
 
 ## 🐛 Troubleshooting
