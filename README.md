@@ -27,7 +27,7 @@ keyman install pakurdu.kmp
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/pak-urdu-installer.git
+git clone https://github.com/nashitahmedbarq/pak-urdu-installer-linux-port.git
 cd pak-urdu-installer
 
 # Open in Keyman Developer on Windows:
@@ -59,14 +59,14 @@ After installation:
 ### Phonetic Examples
 
 | Key | Urdu |
-|-----|------|
-| A   | ا   |
-| B   | ب   |
-| P   | پ   |
-| K   | ک   |
-| G   | گ   |
-| T   | ت   |
-| R   | ر   |
+| --- | ---- |
+| A   | ا    |
+| B   | ب    |
+| P   | پ    |
+| K   | ک    |
+| G   | گ    |
+| T   | ت    |
+| R   | ر    |
 
 > 🧠 Layout follows standard Pakistani phonetic typing conventions
 
@@ -152,10 +152,10 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## 📊 Repository Stats
 
-![GitHub stars](https://img.shields.io/github/stars/yourusername/pak-urdu-installer)
-![GitHub forks](https://img.shields.io/github/forks/yourusername/pak-urdu-installer)
-![GitHub issues](https://img.shields.io/github/issues/yourusername/pak-urdu-installer)
-![GitHub license](https://img.shields.io/github/license/yourusername/pak-urdu-installer)
+![GitHub stars](https://img.shields.io/github/stars/nashitahmedbarq/pak-urdu-installer-linux-port)
+![GitHub forks](https://img.shields.io/github/forks/nashitahmedbarq/pak-urdu-installer-linux-port)
+![GitHub issues](https://img.shields.io/github/issues/nashitahmedbarq/pak-urdu-installer-linux-port)
+![GitHub license](https://img.shields.io/github/license/nashitahmedbarq/pak-urdu-installer-linux-port)
 
 ---
 
