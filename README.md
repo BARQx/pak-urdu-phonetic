@@ -27,6 +27,8 @@ It's designed specifically for Pakistani Urdu typing conventions and works exact
 | Linux (Ubuntu/Debian) | ✅ Fully Supported | Keyman |
 | macOS | ✅ Fully Supported | Keyman |
 
+---
+
 ## 📥 Installation Instructions
 
 ### 🐧 For Linux Users
@@ -83,6 +85,8 @@ sudo apt install keyman
 3. Start typing in any application
 
 That's it! Start typing in any app.
+
+---
 
 ## Pak Urdu Installer - Keyboard Layout Mapping
 
@@ -284,6 +288,8 @@ That's it! Start typing in any app.
 **Total Keys:** 48  
 **Total Mappings:** 174  
 
+---
+
 ## 🔧 For Developers
 
 ### Building from Source
@@ -307,6 +313,7 @@ That's it! Start typing in any app.
 
 ### Project Structure
 
+```
 pak-urdu-installer-linux-port/
 ├── 📝 HISTORY.md                    # Version history
 ├── 📄 LICENSE.md                    # MIT License
@@ -320,6 +327,8 @@ pak-urdu-installer-linux-port/
     ├── readme.htm                   # Help docs
     └── welcome.htm                  # Welcome screen
 ```
+
+---
 
 ## 🐛 Troubleshooting
 
@@ -342,6 +351,8 @@ If you encounter issues:
 2. Create a new issue with your system details
 3. Include screenshots if possible
 
+---
+
 ## 🤝 Contributing
 
 We welcome contributions! Here's how you can help:
@@ -351,6 +362,8 @@ We welcome contributions! Here's how you can help:
 3. **Code contributions**: Fork, improve, and submit pull requests
 4. **Documentation**: Help improve this README or add tutorials
 
+---
+
 ## 📜 License
 
 MIT License - see [LICENSE](LICENSE) file for details.
@@ -359,10 +372,14 @@ MIT License - see [LICENSE](LICENSE) file for details.
 - Original layout: [mBilalm](https://mbilalm.com/urdu-installer.php)
 - Linux port: [Nashit Ahmed Barq](https://github.com/nashitahmedbarq)
 
+---
+
 ## 🙏 Acknowledgments
 
 - **[mBilalm](https://mbilalm.com/urdu-installer.php)** for creating the original Windows Pak Urdu Installer
 - **Keyman team** for providing cross-platform keyboard tools
 - **Urdu computing community** for feedback and support
+
+---
 
 **Made with ❤️ for the Urdu computing community**
