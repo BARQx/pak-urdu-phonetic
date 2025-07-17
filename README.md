@@ -22,12 +22,12 @@ It's designed specifically for Pakistani Urdu typing conventions and works exact
 ## 📱 Platform Support
 
 | Platform | Status | Installation Method |
-|----------|--------|-------------------|
+|-|--|-|
 | Windows 10/11 | ✅ Fully Supported | Keyman |
 | Linux (Ubuntu/Debian) | ✅ Fully Supported | Keyman |
 | macOS | ✅ Fully Supported | Keyman |
 
----
+
 
 ## 📥 Installation Instructions
 
@@ -86,14 +86,14 @@ sudo apt install keyman
 
 That's it! Start typing in any app.
 
----
+
 
 ## Pak Urdu Installer - Keyboard Layout Mapping
 
 ### Simple Keys
 
 | Key | Character | Unicode |
-|-----|-----------|---------|
+|--|--||
 | ' | ' | U+0027 |
 | , | ، | U+060C |
 | - | - | U+002D |
@@ -146,7 +146,7 @@ That's it! Start typing in any app.
 ### Shift Combinations
 
 | Key | Character | Unicode |
-|-----|-----------|---------|
+|--|--||
 | ' | " | U+0022 |
 | , | ِ | U+0650 |
 | - | = | U+003D |
@@ -198,7 +198,7 @@ That's it! Start typing in any app.
 ### AltGr (Right Alt) Combinations
 
 | Key | Character | Unicode |
-|-----|-----------|---------|
+|--|--||
 | ' | ” | U+201D |
 | , | ۫ | U+06EB |
 | - | ؀ | U+0600 |
@@ -250,7 +250,7 @@ That's it! Start typing in any app.
 ### AltGr + Shift Combinations
 
 | Key | Character | Unicode |
-|-----|-----------|---------|
+|--|--||
 | ' | ’ | U+2019 |
 | , | ؍ | U+060D |
 | . | ۝ | U+06DD |
@@ -288,7 +288,7 @@ That's it! Start typing in any app.
 **Total Keys:** 48  
 **Total Mappings:** 174  
 
----
+
 
 ## 🔧 For Developers
 
@@ -328,7 +328,7 @@ pak-urdu-installer-linux-port/
     └── welcome.htm                  # Welcome screen
 ```
 
----
+
 
 ## 🐛 Troubleshooting
 
@@ -351,7 +351,7 @@ If you encounter issues:
 2. Create a new issue with your system details
 3. Include screenshots if possible
 
----
+
 
 ## 🤝 Contributing
 
@@ -362,7 +362,7 @@ We welcome contributions! Here's how you can help:
 3. **Code contributions**: Fork, improve, and submit pull requests
 4. **Documentation**: Help improve this README or add tutorials
 
----
+
 
 ## 📜 License
 
@@ -372,7 +372,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 - Original layout: [mBilalm](https://mbilalm.com/urdu-installer.php)
 - Linux port: [Nashit Ahmed Barq](https://github.com/nashitahmedbarq)
 
----
+
 
 ## 🙏 Acknowledgments
 
@@ -380,6 +380,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 - **Keyman team** for providing cross-platform keyboard tools
 - **Urdu computing community** for feedback and support
 
----
+
 
 **Made with ❤️ for the Urdu computing community**
