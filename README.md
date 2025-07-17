@@ -142,7 +142,7 @@ We’re especially looking for feedback from:
 This project is licensed under the [MIT License](LICENSE).
 
 - Original layout: © [mBilalm](https://mbilalm.com)
-- Ported and packaged: © 2025 Nashit Ahmad
+- Ported and packaged: © 2025 Nashit Ahmed Barq
 
 ## 🙏 Acknowledgments
 
@@ -159,4 +159,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-**Made with ❤️ for the Urdu computing community by [Nashit Ahmad](https://github.com/yourusername)**
+**Made with ❤️ for the Urdu computing community by [Nashit Ahmed Barq](https://github.com/nashitahmedbarq)**
