@@ -6,7 +6,7 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>readme.htm</ReadMeFile>
+    <ReadMeFile>welcome.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
     <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
@@ -21,9 +21,9 @@
     <Name URL="">Pak Urdu Installer - Linux Port</Name>
     <Copyright URL="">Copyright © Nashit Ahmed Barq</Copyright>
     <Author URL="">Nashit Ahmed Barq</Author>
-    <Description URL="">Linux-compatible **Urdu Phonetic Keyboard Layout** based on the original [Pak Urdu Installer](https://mbilalm.com) by **mBilalm**.  
+    <Description URL="">Linux-compatible **Urdu Phonetic Keyboard Layout** based on the original [Pak Urdu Installer](https://www.mbilalm.com/download/pak-urdu-installer.php) by **mBilalm**.  
 Ported and packaged by **Nashit Ahmed Barq** for use with [Keyman](https://keyman.com) on **Linux and Windows**.</Description>
-    <Version URL="">1.0.0</Version>
+    <Version URL=""></Version>
     <WebSite URL="https://github.com/NashitAhmedBarq/pak-urdu-installer-linux-port/">https://github.com/NashitAhmedBarq/pak-urdu-installer-linux-port/</WebSite>
   </Info>
   <Files>

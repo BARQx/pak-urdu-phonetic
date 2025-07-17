@@ -2,12 +2,14 @@
 c Converted using Keyman Developer and structured for Linux/Windows distribution.
 c Packaged and maintained by Nashit Ahmed Barq (2025).
 
-store(&Version) "10.0"
 store(&NAME) 'Pak Urdu Installer - Linux Port'
 store(&COPYRIGHT) 'Copyright © 2025 Nashit Ahmed Barq'
-store(&KEYBOARDVERSION) '1.0.0'
-store(&TARGETS) 'windows linux'
-store(&MESSAGE) 'Modern cross-platform port of the popular Pak Urdu Installer keyboard layout by MBilalM (https://mbilalm.com)'
+store(&KEYBOARDVERSION) '1.0'
+store(&TARGETS) 'windows macosx linux'
+store(&MESSAGE) 'Modern cross-platform port of the popular Pak Urdu Installer keyboard layout by mBilalm (https://mbilalm.com/urdu-installer.php)'
+store(&KMW_RTL) '1'
+store(&LANGUAGE) 'x0420'
+store(&WINDOWSLANGUAGES) 'x0420'
 
 begin Unicode > use(main)
 
