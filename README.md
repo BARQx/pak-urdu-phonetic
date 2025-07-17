@@ -380,6 +380,6 @@ MIT License - see [LICENSE](LICENSE) file for details.
 - **Keyman team** for providing cross-platform keyboard tools
 - **Urdu computing community** for feedback and support
 
-
+---
 
 **Made with ❤️ for the Urdu computing community**
