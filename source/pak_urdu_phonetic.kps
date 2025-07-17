@@ -6,7 +6,7 @@
   </System>
   <Options>
     <ExecuteProgram></ExecuteProgram>
-    <ReadMeFile>welcome.htm</ReadMeFile>
+    <ReadMeFile>readme.htm</ReadMeFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
     <WelcomeFile>welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
@@ -18,13 +18,13 @@
     <Items/>
   </StartMenu>
   <Info>
-    <Name URL="">Pak Urdu Installer - Linux Port</Name>
+    <Name URL="">Pak Urdu Phonetic</Name>
     <Copyright URL="">Copyright © Nashit Ahmed Barq</Copyright>
     <Author URL="">Nashit Ahmed Barq</Author>
-    <Description URL="">Linux-compatible **Urdu Phonetic Keyboard Layout** based on the original [Pak Urdu Installer](https://www.mbilalm.com/download/pak-urdu-installer.php) by **mBilalm**.  
-Ported and packaged by **Nashit Ahmed Barq** for use with [Keyman](https://keyman.com) on **Linux and Windows**.</Description>
+    <Description URL="">**Pak Urdu Phonetic** is based on the original [Pak Urdu Installer](https://www.mbilalm.com/urdu-installer.php) by **mBilalm**.  
+Ported and packaged by **Nashit Ahmed Barq** for use with [Keyman](https://keyman.com) on **Linux, Windows and macOS**.</Description>
     <Version URL=""></Version>
-    <WebSite URL="https://github.com/NashitAhmedBarq/pak-urdu-installer-linux-port/">https://github.com/NashitAhmedBarq/pak-urdu-installer-linux-port/</WebSite>
+    <WebSite URL="https://github.com/NashitAhmedBarq/pak-urdu-phonetic/">https://github.com/NashitAhmedBarq/pak-urdu-phonetic/</WebSite>
   </Info>
   <Files>
     <File>
@@ -46,15 +46,15 @@ Ported and packaged by **Nashit Ahmed Barq** for use with [Keyman](https://keyma
       <FileType>.md</FileType>
     </File>
     <File>
-      <Name>pak_urdu_installer.kmx</Name>
-      <Description>Keyboard pak_urdu_installer_linux_port</Description>
+      <Name>pak_urdu_phonetic.kmx</Name>
+      <Description>Keyboard Pak Urdu Phonetic</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
     </File>
   </Files>
   <Keyboards>
     <Keyboard>
-      <ID>pak_urdu_installer</ID>
+      <ID>pak_urdu_phonetic</ID>
       <Languages>
         <Language ID="ur">Urdu</Language>
       </Languages>

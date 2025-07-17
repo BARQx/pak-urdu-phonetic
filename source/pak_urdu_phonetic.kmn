@@ -1,8 +1,8 @@
 ﻿c Ported from the original "Pak Urdu Installer" layout by mBilalm (https://mbilalm.com/urdu-installer.php).
-c Converted using Keyman Developer and structured for Linux/Windows distribution.
+c Converted using Keyman Developer and structured for Linux/Windows/macOS distribution.
 c Packaged and maintained by Nashit Ahmed Barq (2025).
 
-store(&NAME) 'Pak Urdu Installer - Linux Port'
+store(&NAME) 'Pak Urdu Phonetic'
 store(&COPYRIGHT) 'Copyright © 2025 Nashit Ahmed Barq'
 store(&KEYBOARDVERSION) '1.0'
 store(&TARGETS) 'windows macosx linux'
