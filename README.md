@@ -1,162 +1,190 @@
-# Pak Urdu Installer – Linux Port (based on mBilalm)
+# Pak Urdu Installer – Linux Port
 
-A cross-platform Urdu keyboard layout for Pakistani Urdu typing, ported from the original Windows-only Pak Urdu Installer by [mBilalm](https://mbilalm.com), now available in **Keyman format** for **Linux** and **Windows** systems.
+A cross-platform Urdu keyboard layout for Pakistani Urdu typing, ported from the original Windows-only Pak Urdu Installer by [mBilalm](https://mbilalm.com). Now available in **Keyman format** for **Linux** and **Windows** systems.
+
+## What is this?
+
+This keyboard layout lets you type Urdu text using standard English keys in a phonetic way. For example:
+- Press `A` to get `ا`
+- Press `B` to get `ب` 
+- Press `P` to get `پ`
+
+It's designed specifically for Pakistani Urdu typing conventions and works exactly like the popular Windows-only Pak Urdu Installer.
 
 ## 🌟 Features
 
-- **Cross-platform**: Works on **Linux** and **Windows**
-- **Complete Urdu support**: All characters, diacritics, and symbols
+- **Cross-platform**: Works on Linux and Windows
+- **Complete Urdu support**: All Urdu characters, diacritics, and symbols
 - **Pakistani phonetic standard**: Matches original Pak Urdu Installer behavior
-- **Fast installation**: Simple `.kmp` package for one-click install
-- **Tested compatibility**: Works with Keyman Desktop and Keyman for Linux
-- **Open source**: Licensed under MIT, with credits to original author
+- **Easy installation**: Simple one-click install package
+- **Open source**: MIT licensed with full credits to original author
 
-## 📥 Installation
+## 📥 Installation Instructions
 
-### Option 1: Download Pre-built Package
+### For Windows Users
 
-1. Download the latest `.kmp` file from the [Releases](../../releases) section
-2. On **Windows**, double-click the file to install using Keyman Desktop
-3. On **Linux**, use Keyman’s command-line tool:
+**Prerequisites:**
+- Download and install [Keyman Desktop](https://keyman.com/desktop/) first
 
-```bash
-keyman install pakurdu.kmp
+**Installation Steps:**
+1. Download the latest `pak_urdu_installer.kmp` file from the [Releases](../../releases) section
+2. Double-click the downloaded `.kmp` file
+3. Keyman Desktop will open and ask for confirmation - click "Install"
+4. The keyboard will be automatically added to your system
+
+**To activate:**
+1. Click the Keyman Desktop icon in your system tray
+2. Select "Pak Urdu Installer" from the keyboard list
+3. Start typing in any application
+
+### For Linux Users
+
+**Prerequisites:**
+- Install Keyman for Linux first:
+  ```bash
+  # On Ubuntu/Debian:
+  sudo apt install keyman
+  
+  # On Fedora:
+  sudo dnf install keyman
+  
+  # On Arch Linux:
+  sudo pacman -S keyman
+  ```
+
+**Installation Steps:**
+1. Download the latest `pak_urdu_installer.kmp` file from the [Releases](../../releases) section
+2. Open terminal and navigate to your downloads folder
+3. Install the keyboard:
+   ```bash
+   keyman install pak_urdu_installer.kmp
+   ```
+4. Restart your system or log out and back in
+
+**To activate:**
+1. Open your system settings → Input Sources (or Keyboard)
+2. Add "Pak Urdu Installer" as an input method
+3. Use your keyboard switcher (usually Alt+Shift or Super+Space) to switch to Urdu
+4. Start typing in any application
+
+## 🎯 How to Use
+
+### Basic Typing
+
+Once activated, simply type English letters to get Urdu characters:
+
+| English Key | Urdu Output | Example Word |
+|-------------|-------------|--------------|
+| A           | ا           | **A**dmi → **ا**دمی |
+| B           | ب           | **B**ari → **ب**ڑی |
+| P           | پ           | **P**ani → **پ**انی |
+| K           | ک           | **K**itab → **ک**تاب |
+| G           | گ           | **G**har → **گ**ھر |
+| T           | ت           | **T**eez → **ت**یز |
+| R           | ر           | **R**ang → **ر**نگ |
+
+### Viewing the Full Layout
+
+To see all key mappings:
+1. **Windows**: Right-click Keyman Desktop icon → "On Screen Keyboard"
+2. **Linux**: Use the Keyman configuration tool or refer to the layout chart
+
+## 🔧 For Developers
+
+### Building from Source
+
+**Prerequisites:**
+- [Keyman Developer](https://keyman.com/developer) (Windows only)
+- Git
+
+**Build Steps:**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nashitahmedbarq/pak-urdu-installer-linux-port.git
+   cd pak-urdu-installer
+   ```
+
+2. Open `pak_urdu_installer.kpj` in Keyman Developer
+
+3. Press **F7** to build the project
+
+4. Find the compiled `.kmp` file in the `build/` folder
+
+### Project Structure
+
+```
+pak-urdu-installer-linux-port/
+├── HISTORY.md                    # Version history and changelog
+├── LICENSE.md                    # MIT License
+├── README.md                     # This documentation
+├── pak_urdu_installer.kpj        # Keyman project file
+├── pak_urdu_installer.kpj.user   # User-specific project settings
+├── build/                        # Compiled output files
+│   └── pak_urdu_installer.kmp    # Installable keyboard package
+└── source/                       # Source code and assets
+    ├── pak_urdu_installer.kmn    # Main keyboard layout logic
+    ├── pak_urdu_installer.kmx    # Compiled keyboard file
+    ├── pak_urdu_installer.kps    # Package definition
+    ├── readme.htm                # Embedded help documentation
+    └── welcome.htm               # Welcome screen for installer
 ```
 
-### Option 2: Install from Source
+## 🐛 Troubleshooting
 
-```bash
-# Clone the repository
-git clone https://github.com/nashitahmedbarq/pak-urdu-installer-linux-port.git
-cd pak-urdu-installer
+### Common Issues
 
-# Open in Keyman Developer on Windows:
-# File > Open > source/pakurdu.kpj
-# Press F7 to build the project
-```
+**Windows:**
+- **Keyman Desktop not opening**: Restart as administrator
+- **Keyboard not appearing**: Check if Keyman service is running
+- **Characters not typing**: Make sure keyboard is selected in Keyman Desktop
 
-> 💡 **Note**: Keyman Developer is only available on Windows for building.
+**Linux:**
+- **Installation fails**: Check if you have proper permissions (`sudo` may be needed)
+- **Keyboard not available**: Restart your session after installation
+- **Input method not switching**: Check your desktop environment's keyboard settings
 
-## 🖥️ Platform Support
+### Getting Help
 
-| Platform | Status         | Installation Method     |
-|----------|----------------|-------------------------|
-| Windows  | ✅ Supported   | Keyman Desktop GUI      |
-| Linux    | ✅ Supported   | Keyman CLI              |
-| macOS    | ❌ Not supported |                      |
-| Android  | ❌ Not supported |                      |
-| iOS      | ❌ Not supported |                      |
-| Web      | ❌ Not supported |                      |
-
-## 🎯 Usage
-
-After installation:
-
-1. Open your system’s language or input method settings
-2. Select **Pak Urdu Installer** from the list of installed keyboards
-3. Use your physical keyboard to type in phonetic Urdu
-
-### Phonetic Examples
-
-| Key | Urdu |
-| --- | ---- |
-| A   | ا    |
-| B   | ب    |
-| P   | پ    |
-| K   | ک    |
-| G   | گ    |
-| T   | ت    |
-| R   | ر    |
-
-> 🧠 Layout follows standard Pakistani phonetic typing conventions
-
-### On-Screen Keyboard
-
-Use the **Keyman On-Screen Keyboard** to see visual mapping if needed.
-
-## 🔧 Development
-
-### Prerequisites
-
-- [Keyman Developer](https://keyman.com/developer) for building `.kmp`
-- Git for version control
-
-### File Structure
-
-```
-pak-urdu-installer/
-├── build/              # Compiled .kmx and .kmp files
-├── source/             # Keyboard source files
-│   ├── pakurdu.kmn     # Layout logic (Keyman source)
-│   ├── pakurdu.kps     # Package definition
-│   ├── pakurdu.kpj     # Project file
-│   ├── welcome.htm     # Welcome screen
-│   └── readme.htm      # Local embedded readme
-├── LICENSE             # MIT License
-├── README.md           # Main documentation
-└── credits.md          # Credits and attribution
-```
-
-### Build Instructions
-
-1. Open `source/pakurdu.kpj` in Keyman Developer
-2. Press **F7** to build
-3. Output will appear in `build/` folder
+If you encounter issues:
+1. Check the [Issues](../../issues) section for existing solutions
+2. Create a new issue with your system details
+3. Include screenshots if possible
 
 ## 🤝 Contributing
 
-We welcome contributions of all kinds!
+We welcome contributions! Here's how you can help:
 
-### How to Contribute
+1. **Report bugs**: Found a typing issue? [Open an issue](../../issues)
+2. **Suggest improvements**: Ideas for better functionality
+3. **Code contributions**: Fork, improve, and submit pull requests
+4. **Documentation**: Help improve this README or add tutorials
 
-1. Fork this repository
-2. Create a feature branch: `git checkout -b my-fix`
-3. Commit your changes
-4. Push to your fork
-5. Create a pull request
+## 📱 Platform Support
 
-### Areas for Contribution
-
-- Bug fixes or typing logic corrections
-- Support for additional platforms
-- Better welcome or help pages
-- Native Linux/XKB layout generation
-- Packaging as `.deb` or `.rpm`
-
-## 📱 Screenshots
-
-![Keyboard Layout](docs/keyboard-layout.png)  
-*Visual layout of the Pak Urdu Installer on Keyman*
-
-## 🐛 Issues
-
-Found a problem? Have an idea? Please [open an issue](../../issues).
-
-We’re especially looking for feedback from:
-- Linux users with regional keyboard needs
-- Urdu typewriters and linguists
-- Anyone who used Pak Urdu Installer before
+| Platform | Status | Installation Method |
+|----------|--------|-------------------|
+| Windows 10/11 | ✅ Fully Supported | Keyman Desktop GUI |
+| Linux (Ubuntu/Debian) | ✅ Fully Supported | Keyman CLI |
+| Linux (Fedora) | ✅ Fully Supported | Keyman CLI |
+| Linux (Arch) | ✅ Fully Supported | Keyman CLI |
+| macOS | ❌ Not Available | - |
+| Android | ❌ Not Available | - |
+| iOS | ❌ Not Available | - |
 
 ## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
+MIT License - see [LICENSE](LICENSE) file for details.
 
-- Original layout: © [mBilalm](https://mbilalm.com)
-- Ported and packaged: © 2025 Nashit Ahmed Barq
+**Credits:**
+- Original layout: [mBilalm](https://mbilalm.com)
+- Linux port: [Nashit Ahmed Barq](https://github.com/nashitahmedbarq)
 
 ## 🙏 Acknowledgments
 
-- **[mBilalm](https://mbilalm.com)** – Creator of the original Windows-based Pak Urdu Installer
-- **Keyman** – For enabling multilingual input across platforms
-- Urdu computing community – For feedback and encouragement
-
-## 📊 Repository Stats
-
-![GitHub stars](https://img.shields.io/github/stars/nashitahmedbarq/pak-urdu-installer-linux-port)
-![GitHub forks](https://img.shields.io/github/forks/nashitahmedbarq/pak-urdu-installer-linux-port)
-![GitHub issues](https://img.shields.io/github/issues/nashitahmedbarq/pak-urdu-installer-linux-port)
-![GitHub license](https://img.shields.io/github/license/nashitahmedbarq/pak-urdu-installer-linux-port)
+- **[mBilalm](https://mbilalm.com)** for creating the original Windows Pak Urdu Installer
+- **Keyman team** for providing cross-platform keyboard tools
+- **Urdu computing community** for feedback and support
 
 ---
 
-**Made with ❤️ for the Urdu computing community by [Nashit Ahmed Barq](https://github.com/nashitahmedbarq)**
+**Made with ❤️ for the Urdu computing community**
