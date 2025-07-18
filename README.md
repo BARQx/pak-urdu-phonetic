@@ -1,16 +1,16 @@
-اردو سے محبت رکھنے والوں اور اُن کے سسٹمز (systems) کے لیے ایک صوتی (phonetic) کی بورڈ لےآؤٹ
-
-اگر آپ بھی میری طرح اردو میں لکھتے ہیں، تحقیق کرتے ہیں (research) یا دل کی بات کسی سے بانٹتے ہیں — تو آپ جانتے ہوں گے کہ ایک اچھا کی بورڈ لےآؤٹ (keyboard layout) کتنا ضروری ہوتا ہے۔ میں برسوں سے ونڈوز (Windows) پر پاک اردو انسٹالر استعمال کرتا آرہا ہوں۔ اُس کا فونیٹک لےآؤٹ ایسا ہے جیسے اُنگلیوں کی زبان سمجھتا ہو: آسان اور فطری۔
-
-مگر جب بھی لینکس (Linux) پر مکمل طور پر منتقل ہونے کی کوشش کی، ایک چیز ہمیشہ روک دیتی تھی: اردو کے لیے کوئی ایسا لےآؤٹ ہی نہیں تھا جو مکمل (polished)، خوبصورت اور فیچر رچ (feature-rich) ہو۔ ونڈوز جیسا سکون کہیں اور نہ ملا۔
-
-یہی وہ خَلاء تھا جسے پُر کرنے کا فیصلہ کیا۔
-
-یہ پراجیکٹ صرف ایک کلون (clone) نہیں، بلکہ پاک اردو انسٹالر کا ایک خالص، محبت بھرا پورٹ (port) ہے — ایسا لےآؤٹ جو اردو بولنے والوں کو ہر پلیٹ فارم (platform) پر اپنائیت کا احساس دے، چاہے وہ لینکس ہو، ونڈوز یا میک او ایس (macOS)۔
-
-اگر آپ بھی کبھی سوچتے رہے ہیں کہ لینکس پر اردو صحیح طریقے سے کیسے لکھی جائے — اور کوئی موزوں حل (solution) نہیں ملا — تو شاید آپ کی تلاش اب ختم ہو چکی ہے۔
-
-— ناشط احمد برقؔ
+> A phonetic Urdu keyboard layout for people who care deeply about the script — and the system they type it on.
+>
+> As someone who regularly works in Urdu — whether writing, researching, or just chatting — I’ve always relied on Pak Urdu Installer on Windows. Its phonetic layout made typing fast, intuitive, and effortless. For years, it just worked.
+>
+> But every time I tried to seriously use Linux (especially on my laptop), the lack of a polished, feature-rich Urdu layout always pulled me back. No layout matched the familiarity or usability of what we had on Windows.
+>
+> This project is my attempt to bridge that gap.
+>
+> It’s a faithful port of Pak Urdu Installer — not just a clone, but a layout that feels like home for Urdu users across  platforms: Linux, Windows, and even the macOS.
+>
+> If you’ve ever wanted to type Urdu properly on Linux and couldn’t find “the one,” this might be it.
+>
+>  — Nashit Ahmed Barq
 
 # Pak Urdu Phonetic
 
@@ -157,9 +157,9 @@ That's it! Start typing in any app.
 
 | Key | Character | Unicode |
 |-----|-----------|---------|
-| ' | " | U+0022 |
+| ' | ً | U+0022 |
 | , | ِ | U+0650 |
-| - | = | U+003D |
+| - | ـ | U+003D |
 | . | َ | U+064E |
 | / | ؟ | U+061F |
 | 0 | ٠ | U+0660 |
@@ -334,7 +334,6 @@ pak-urdu-phonetic/
 ├── 📝 HISTORY.md                      # Version history
 ├── 📄 LICENSE.md                      # License (MIT)
 ├── 🛠️ pak_urdu_phonetic.kpj           # Keyman project file
-├── ⚙️ pak_urdu_phonetic.kpj.user      # User-specific project settings
 └── 📖 README.md                       # Project documentation (you’re here)
 ```
 
