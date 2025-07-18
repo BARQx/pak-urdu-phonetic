@@ -1,3 +1,5 @@
+[![Intro to Urdu Layout](assets/ur_intro.webp)](assets/ur_intro.webp)
+
 > A phonetic Urdu keyboard layout for people who care deeply about the script — and the system they type it on.
 >
 > As someone who regularly works in Urdu — whether writing, researching, or just chatting — I’ve always relied on Pak Urdu Installer on Windows. Its phonetic layout made typing fast, intuitive, and effortless. For years, it just worked.
