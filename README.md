@@ -1,7 +1,5 @@
 [![Introduction to Pak Urdu Phonetic](assets/intro_ur.webp)](assets/intro_ur.webp)
 
-> A phonetic Urdu keyboard layout for people who care deeply about the script — and the system they type it on.
->
 > As someone who regularly works in Urdu — whether writing, researching, or just chatting — I’ve always relied on Pak Urdu Installer on Windows. Its phonetic layout made typing fast, intuitive, and effortless. For years, it just worked.
 >
 > But every time I tried to seriously use Linux (especially on my laptop), the lack of a polished, feature-rich Urdu layout always pulled me back. No layout matched the familiarity or usability of what we had on Windows.
@@ -330,6 +328,8 @@ pak-urdu-phonetic/
 ├── 🧾 pak_urdu_phonetic.keyboard_info     # Metadata for Keyman index
 ├── 🛠️ pak_urdu_phonetic.kpj               # Keyman project file
 ├── 📖 README.md                           # Project documentation (you’re here)
+├── 🖼️ assets/                             # Repo-related images & docs
+│   └── 🌐 intro_ur.webp                   # Urdu layout intro image
 └── 💾 source/                             # Source files (editable)
     ├── 📁 help/
     │   └── 📜 pak_urdu_phonetic.php       # PHP help file
@@ -343,6 +343,7 @@ pak-urdu-phonetic/
         ├── 🖼️ s3.png
         ├── 🖼️ s4.png
         └── 📗 welcome.htm                 # Welcome instructions
+
 ```
 
 ## 🐛 Troubleshooting
