@@ -1,4 +1,4 @@
-[![Intro to Urdu Layout](assets/ur_intro.webp)](assets/ur_intro.webp)
+[![Introduction to Pak Urdu Phonetic](assets/intro_ur.webp)](assets/intro_ur.webp)
 
 > A phonetic Urdu keyboard layout for people who care deeply about the script — and the system they type it on.
 >
