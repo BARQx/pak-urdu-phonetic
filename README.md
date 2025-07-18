@@ -8,7 +8,7 @@
 >
 > This project is my attempt to bridge that gap.
 >
-> It’s a faithful port of Pak Urdu Installer — not just a clone, but a layout that feels like home for Urdu users across  platforms: Linux, Windows, and even the macOS.
+> It’s a faithful port of Pak Urdu Installer, a layout that feels like home for Urdu users across  platforms: Linux, Windows, and even the macOS.
 >
 > If you’ve ever wanted to type Urdu properly on Linux and couldn’t find “the one,” this might be it.
 >
