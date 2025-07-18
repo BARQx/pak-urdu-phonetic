@@ -7,8 +7,9 @@
   <Options>
     <ExecuteProgram></ExecuteProgram>
     <ReadMeFile>readme.htm</ReadMeFile>
+    <GraphicFile>splash_screen.jpg</GraphicFile>
     <LicenseFile>..\LICENSE.md</LicenseFile>
-    <WelcomeFile>welcome.htm</WelcomeFile>
+    <WelcomeFile>welcome\welcome.htm</WelcomeFile>
     <MSIFileName></MSIFileName>
     <MSIOptions></MSIOptions>
     <FollowKeyboardVersion/>
@@ -28,28 +29,58 @@ Ported and packaged by **Nashit Ahmed Barq** for use with [Keyman](https://keyma
   </Info>
   <Files>
     <File>
-      <Name>welcome.htm</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
-      <Name>readme.htm</Name>
-      <Description></Description>
-      <CopyLocation>0</CopyLocation>
-      <FileType>.htm</FileType>
-    </File>
-    <File>
       <Name>..\LICENSE.md</Name>
       <Description></Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.md</FileType>
     </File>
     <File>
+      <Name>readme.htm</Name>
+      <Description>File readme.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\welcome.htm</Name>
+      <Description>File welcome.htm</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.htm</FileType>
+    </File>
+    <File>
+      <Name>welcome\s1.png</Name>
+      <Description>File s1.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\s2.png</Name>
+      <Description>File s2.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\s3.png</Name>
+      <Description>File s3.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
+      <Name>welcome\s4.png</Name>
+      <Description>File s4.png</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.png</FileType>
+    </File>
+    <File>
       <Name>..\build\pak_urdu_phonetic.kmx</Name>
       <Description>Keyboard Pak Urdu Phonetic</Description>
       <CopyLocation>0</CopyLocation>
       <FileType>.kmx</FileType>
+    </File>
+    <File>
+      <Name>splash_screen.jpg</Name>
+      <Description>File splash_screen.jpg</Description>
+      <CopyLocation>0</CopyLocation>
+      <FileType>.jpg</FileType>
     </File>
   </Files>
   <Keyboards>

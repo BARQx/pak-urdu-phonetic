@@ -1,223 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Start Using Pak Urdu Phonetic</title>
-<style type="text/css">
-    body { 
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #121212;
-      color: #e0e0e0;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      background: #1e1e1e;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-    }
-    h1 { 
-      font-size: 28px;
-      font-weight: 700;
-      color: #64b5f6; 
-      margin-bottom: 20px;
-      padding-bottom: 15px;
-      border-bottom: 2px solid #333;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    h2 { 
-      font-size: 22px;
-      font-weight: 600;
-      color: #81d4fa; 
-      margin-top: 35px;
-      margin-bottom: 15px;
-    }
-    h3 {
-      font-size: 18px;
-      font-weight: 600;
-      color: #90caf9;
-      margin-top: 25px;
-      margin-bottom: 15px;
-      background: #252525;
-      padding: 10px 15px;
-      border-radius: 6px;
-      border-left: 3px solid #64b5f6;
-    }
-    p { 
-      font-size: 16px;
-      color: #b0bec5;
-      margin-bottom: 20px;
-    }
-    .welcome-message {
-      background: linear-gradient(135deg, #1a3a4a 0%, #0d2b3a 100%);
-      border-left: 4px solid #26c6da;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 30px;
-      color: #e0f7fa;
-    }
-    .feature-list {
-      background: #252525;
-      border-left: 4px solid #5c6bc0;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 0 8px 8px 0;
-    }
-    .feature-list ul {
-      margin: 0;
-      padding-left: 25px;
-    }
-    .feature-list li {
-      margin-bottom: 10px;
-      font-size: 15px;
-      line-height: 1.5;
-      color: #cfd8dc;
-    }
-    .typing-example {
-      background: #2e2e2e;
-      border: 1px solid #ffb74d;
-      padding: 20px;
-      border-radius: 8px;
-      margin: 20px 0;
-      font-family: monospace;
-      box-shadow: inset 0 1px 3px rgba(0,0,0,0.3);
-      color: #ffcc80;
-    }
-    .urdu-text {
-      font-family: "Noto Nastaliq Urdu", "Jameel Noori Nastaleeq", "Pak Nastaleeq", Arial Unicode MS;
-      font-size: 18px;
-      direction: rtl;
-      text-align: right;
-      line-height: 1.8;
-      color: #b0bec5;
-    }
-    .credit {
-      background: linear-gradient(135deg, #252525 0%, #1a3a4a 100%);
-      border: 1px solid #333;
-      padding: 20px;
-      border-radius: 8px;
-      margin-top: 35px;
-      font-size: 14px;
-      text-align: center;
-      color: #b0bec5;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 20px 0;
-      font-size: 15px;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.3);
-    }
-    th {
-      background-color: #0d47a1;
-      color: #ffffff;
-      padding: 12px;
-      text-align: left;
-      font-weight: 600;
-    }
-    td {
-      padding: 12px;
-      border-bottom: 1px solid #333;
-      font-family: "Noto Nastaliq Urdu", Arial, sans-serif;
-      color: #cfd8dc;
-    }
-    tr:nth-child(even) {
-      background-color: #252525;
-    }
-    tr:hover {
-      background-color: #333;
-    }
-    .keyboard-section {
-      margin-top: 40px;
-      border-top: 2px dashed #444;
-      padding-top: 25px;
-    }
-    .summary {
-      font-weight: 600;
-      text-align: center;
-      margin-top: 25px;
-      padding: 15px;
-      background: #252525;
-      border-radius: 8px;
-      font-size: 16px;
-      color: #81d4fa;
-    }
-    .keyman-notice {
-      background: #2e2e2e;
-      border-left: 4px solid #ffa000;
-      padding: 15px;
-      margin: 20px 0;
-      border-radius: 0 8px 8px 0;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      color: #ffcc80;
-    }
-    .keyman-notice:before {
-      content: "ℹ️";
-      font-size: 20px;
-    }
-    ol {
-      padding-left: 25px;
-    }
-    ol li {
-      margin-bottom: 10px;
-      font-size: 15px;
-      color: #b0bec5;
-    }
-    a {
-      color: #82b1ff;
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-    a:hover {
-      color: #448aff;
-      text-decoration: underline;
-    }
-    code {
-      background: #333;
-      padding: 2px 6px;
-      border-radius: 4px;
-      font-family: monospace;
-      color: #ff8a65;
-    }
-    strong {
-      color: #ffffff;
-    }
+<?php
+  $pagename = 'Pak Urdu Phonetic Keyboard Help';
+  $pagetitle = $pagename;
+
+  $pagestyle = <<<END
+    .container { max-width: 900px; margin: 20px auto; padding: 20px; font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
+    h1 { font-size: 24px; color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px; }
+    h2 { font-size: 20px; color: #2980b9; margin-top: 30px; }
+    h3 { font-size: 18px; margin-top: 20px; color: #2c3e50; }
+    ul, ol { padding-left: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { padding: 8px 12px; border: 1px solid #ccc; }
+    th { background: #f0f0f0; }
+    .welcome-message { background: #e3f2fd; padding: 15px; border-left: 4px solid #2196f3; }
+    .keyman-notice { background: #fff3cd; padding: 10px 15px; border-left: 4px solid #ffc107; margin: 20px 0; }
+    a { color: #1565c0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  END;
+
+  require_once('header.php');
+?>
+
+<style>
+
+.container { max-width: 900px; margin: 20px auto; padding: 20px; font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
+    h1 { font-size: 24px; color: #2c3e50; border-bottom: 2px solid #ddd; padding-bottom: 10px; margin-bottom: 20px; }
+    h2 { font-size: 20px; color: #2980b9; margin-top: 30px; }
+    h3 { font-size: 18px; margin-top: 20px; color: #2c3e50; }
+    ul, ol { padding-left: 20px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { padding: 8px 12px; border: 1px solid #ccc; }
+    th { background: #f0f0f0; }
+    .welcome-message { background: #e3f2fd; padding: 15px; border-left: 4px solid #2196f3; }
+    .keyman-notice { background: #fff3cd; padding: 10px 15px; border-left: 4px solid #ffc107; margin: 20px 0; }
+    a { color: #1565c0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
 </style>
-</head>
-<body>
 <div class="container">
   <h1>🎉 Welcome to Pak Urdu Phonetic!</h1>
-  
-  <div class="welcome-message">
-    <p><strong>Pak Urdu Phonetic</strong> is an Urdu Keyboard Layout based on the original <a href="https://mbilalm.com/urdu-installer.php">Pak Urdu Installer</a> layout by <strong>mBilalm</strong>.</p>
-  </div>
+
+<div class="welcome-message">
+  <p><strong>Pak Urdu Phonetic</strong> is an Urdu keyboard layout faithfully ported from the popular Windows-based <a href="https://mbilalm.com/urdu-installer.php">Pak Urdu Installer</a> layout by <strong>mBilalm</strong>. It offers the same simple, intuitive phonetic typing experience and brings this widely adopted standard to the Keyman platform for cross-platform use.</p>
+
+  <p>This Keyman-based layout is a modern reimplementation, adapted for cross-platform use (Linux, Windows, macOS) while maintaining compatibility with the original mapping for familiarity and ease of transition.</p>
+
+  <p><strong>With over 170 unique key mappings</strong> spanning regular, Shift, AltGr (Right Alt), and Shift+AltGr combinations, this layout offers the most complete phonetic Urdu typing solution currently available — more comprehensive than any previous Urdu keyboard.</p>
+</div>
 
   <div class="keyman-notice">
-    <p>This keyboard layout is intended for use with <strong>Keyman</strong> keyboard software. Please ensure you have Keyman installed to use this keyboard package effectively.</p>
+    <p>This keyboard layout is intended for use with <strong>Keyman</strong> keyboard software.
+    Please ensure you have Keyman installed to use this keyboard package effectively.</p>
   </div>
 
   <h2>✨ Key Features</h2>
-  <div class="feature-list">
-    <ul>
-      <li><strong>Phonetic Layout:</strong> Type Urdu using English phonetic sounds</li>
-      <li><strong>Keyman Compatible:</strong> Designed specifically for Keyman implementation</li>
-      <li><strong>Unicode Support:</strong> Proper rendering of Urdu characters</li>
-      <li><strong>Cross-Platform:</strong> Works on Linux, Windows and macOS via Keyman</li>
-      <li><strong>Easy Installation:</strong> Simple keyboard package installation</li>
-    </ul>
-  </div>
+  <ul>
+    <li><strong>Phonetic Layout:</strong> Type Urdu using English phonetic sounds</li>
+    <li><strong>Keyman Compatible:</strong> Designed specifically for Keyman implementation</li>
+    <li><strong>Unicode Support:</strong> Proper rendering of Urdu characters</li>
+    <li><strong>Cross-Platform:</strong> Works on Linux, Windows and macOS via Keyman</li>
+    <li><strong>Easy Installation:</strong> Simple keyboard package installation</li>
+  </ul>
 
   <h2>💡 Getting Started</h2>
-  <p>To start using your new keyboard with Keyman:</p>
   <ol>
     <li>Ensure Keyman is installed on your system</li>
     <li>Install the Pak Urdu Phonetic package</li>
@@ -227,11 +71,16 @@
     <li>The keyboard follows phonetic patterns - type how words sound!</li>
   </ol>
 
-  <div class="keyboard-section">
-    <h2>⌨️ Pak Urdu Phonetic - Keyboard Layout Mapping</h2>
-    
-	   <h3>Simple Keys</h3>
-    <table>
+  <h2>⌨️ Keyboard Layout Viewer</h2>
+  <p>The visual keyboard layout below shows which Urdu characters appear when you press different keys and modifiers (Shift, AltGr, etc.).</p>
+
+  <div id='osk' data-states='default shift shift-ctrl alt shift-alt'></div>
+
+  <h2>Key Mappings</h2>
+
+  <h3>Regular Layout
+</h3>
+       <table>
       <thead>
         <tr>
           <th>Key</th>
@@ -290,9 +139,9 @@
         <tr><td>`</td><td>ٍ</td><td>U+064D</td></tr>
       </tbody>
     </table>
-
-    <h3>Shift Combinations</h3>
-    <table>
+   <h3>Shift Layout
+</h3>
+      <table>
       <thead>
         <tr>
           <th>Key</th>
@@ -301,9 +150,9 @@
         </tr>
       </thead>
       <tbody>
-        <tr><td>'</td><td>"</td><td>U+0022</td></tr>
+        <tr><td>'</td><td>ً</td><td>U+0022</td></tr>
         <tr><td>,</td><td>ِ</td><td>U+0650</td></tr>
-        <tr><td>-</td><td>=</td><td>U+003D</td></tr>
+        <tr><td>-</td><td>ـ</td><td>U+003D</td></tr>
         <tr><td>.</td><td>َ</td><td>U+064E</td></tr>
         <tr><td>/</td><td>؟</td><td>U+061F</td></tr>
         <tr><td>0</td><td>٠</td><td>U+0660</td></tr>
@@ -317,7 +166,7 @@
         <tr><td>8</td><td>٨</td><td>U+0668</td></tr>
         <tr><td>9</td><td>٩</td><td>U+0669</td></tr>
         <tr><td>;</td><td>:</td><td>U+003A</td></tr>
-        <tr><td>=</td><td>+</td><td>U+002B</td></tr>
+        <tr><td>=</td><td>ۤ</td><td>U+002B</td></tr>
         <tr><td>A</td><td>آ</td><td>U+0622</td></tr>
         <tr><td>B</td><td>﷽</td><td>U+FDFD</td></tr>
         <tr><td>C</td><td>ث</td><td>U+062B</td></tr>
@@ -351,8 +200,9 @@
       </tbody>
     </table>
 
-    <h3>AltGr (Right Alt) Combinations</h3>
-    <table>
+   <h3>AltGr (Right Alt) Layout
+</h3>
+      <table>
       <thead>
         <tr>
           <th>Key</th>
@@ -410,9 +260,9 @@
         <tr><td>`</td><td>ۤ</td><td>U+06E4</td></tr>
       </tbody>
     </table>
-
-    <h3>AltGr + Shift Combinations</h3>
-    <table>
+  <h3>AltGr + Shift Layout
+</h3>
+   <table>
       <thead>
         <tr>
           <th>Key</th>
@@ -456,20 +306,16 @@
       </tbody>
     </table>
 
-    <div class="summary">
-      <p>Total Keys: 48 | Total Mappings: 174</p>
-    </div>
-  </div>
+
+  <p><strong>Total Keys:</strong> 48 | <strong>Total Mappings:</strong> 174</p>
 
   <h2>📖 Need Help?</h2>
-  <p>If you encounter any issues or have suggestions, please visit the <a href="https://github.com/NashitAhmedBarq/pak-urdu-phonetic">project repository</a> and open an issue. For Keyman-specific questions, consult the <a href="https://keyman.com/support/">Keyman support documentation</a>.</p>
+  <p>If you encounter any issues, visit the
+    <a href="https://github.com/NashitAhmedBarq/pak-urdu-phonetic">GitHub repository</a>
+    or check <a href="https://keyman.com/support/">Keyman support</a>.</p>
 
-  <div class="credit">
     <p><strong>Credits:</strong><br><br>
     Original keyboard layout by <strong>mBilalm</strong> (<a href="https://mbilalm.com/urdu-installer.php">Pak Urdu Installer</a>)<br>
     Keyman port and packaging by <strong>Nashit Ahmed Barq</strong><br>
     Keyman implementation and distribution</p>
-  </div>
 </div>
-</body>
-</html>
