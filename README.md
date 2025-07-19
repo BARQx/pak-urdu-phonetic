@@ -30,11 +30,11 @@ It's designed specifically for Pakistani Urdu typing conventions and works exact
 
 ## 🌟 Features
 
-- **Cross-platform**: Works on Linux, Windows and macOS
-- **Complete Urdu support**: All Urdu characters, diacritics, and symbols
-- **Pakistani phonetic standard**: Matches original Pak Urdu Installer behavior
-- **Easy installation**: Simple one-click install package
-- **Open source**: MIT licensed with full credits to original author
+- **Phonetic Layout:** Type Urdu using English phonetic sounds
+- **Keyman Compatible:** Designed specifically for Keyman implementation
+- **Unicode Support:** Proper rendering of Urdu characters
+- **Cross-Platform:** Works across Linux, Windows, and macOS via Keyman, with support for both physical and on-screen keyboards
+- **Easy Installation:** Simple keyboard package installation
 
 ## 📱 Platform Support
 
