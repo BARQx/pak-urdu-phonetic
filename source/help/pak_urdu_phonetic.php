@@ -15,7 +15,7 @@
     .keyman-notice { background: #fff3cd; padding: 10px 15px; border-left: 4px solid #ffc107; margin: 20px 0; }
     a { color: #1565c0; text-decoration: none; }
     a:hover { text-decoration: underline; }
-	.introduction_ur p { direction: rtl; font-family: 'Calibri', Arial, sans-serif; font-size: 1.25rem; }
+    .introduction_ur p { direction: rtl; font-family: 'Calibri', Arial, sans-serif; font-size: 1.25rem; }
   END;
 
   require_once('header.php');
@@ -23,7 +23,7 @@
 
 <div class="container">
   <h1>🎉 Welcome to Pak Urdu Phonetic!</h1>
-  
+
    <div class="introduction_ur">
 
     <p>
@@ -70,7 +70,7 @@
     <p>This keyboard layout is intended for use with <strong>Keyman</strong> keyboard software.
     Please ensure you have Keyman installed to use this keyboard package effectively.</p>
   </div>
-  
+
     <h2>⌨️ Keyboard Layout Viewer</h2>
   <p>The visual keyboard layout below shows which Urdu characters appear when you press different keys and modifiers (Shift, AltGr, AltGr + Shift).</p>
 
