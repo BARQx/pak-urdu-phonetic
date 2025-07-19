@@ -1,4 +1,4 @@
-[![Introduction to Pak Urdu Phonetic](assets/intro_ur.webp)](assets/intro_ur.webp)
+[![Introduction to Pak Urdu Phonetic](assets/intro_ur.png)](assets/intro_ur.webp)
 
 > As someone who regularly works in Urdu — whether writing, researching, or just chatting — I’ve always relied on Pak Urdu Installer on Windows. Its phonetic layout made typing fast, intuitive, and effortless. For years, it just worked.
 >
