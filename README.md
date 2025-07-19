@@ -14,7 +14,10 @@
 
 # Pak Urdu Phonetic
 
-A cross-platform Urdu keyboard layout for Pakistani Urdu typing, ported from the original Windows-only Pak Urdu Installer layout by [mBilalm](https://mbilalm.com/urdu-installer.php). Now available in **Keyman format** for **Linux**, **Windows** and **macOS** systems.
+**Pak Urdu Phonetic** is an Urdu keyboard layout faithfully ported from the popular Windows-based [Pak Urdu Installer](https://mbilalm.com/urdu-installer.php) layout by **mBilalm**. It offers the same simple, intuitive phonetic typing experience and brings this widely adopted standard to the Keyman platform for cross-platform use.
+
+**With over 160+ unique key mappings** across regular, Shift, AltGr (Right Alt), and Shift+AltGr combinations, this layout offers the most complete phonetic Urdu typing solution available — more comprehensive than any previous Urdu keyboard layout to date.
+
 
 ## What is this?
 
@@ -230,10 +233,10 @@ That's it! Start typing in any app.
 | Q | ۥ | U+06E5 |
 | R | ؓ | U+0613 |
 | S | ۜ | U+06DC |
-| T | ‌ | U+200C |
+| T | ‌‌‌ZERO WIDTH NON-JOINER (ZWNJ) | U+200C |
 | U | ٔ | U+0654 |
 | V | ؕ | U+0615 |
-| W | ‍ | U+200D |
+| W | ‍‌‌ZERO WIDTH JOINER (ZWJ) | U+200D |
 | Y | ؁ | U+0601 |
 | Z | ۡ | U+06E1 |
 | ` | ۤ | U+06E4 |
@@ -313,25 +316,25 @@ That's it! Start typing in any app.
 pak-urdu-phonetic/
 ├── 📝 HISTORY.md                          # Version history
 ├── 📄 LICENSE.md                          # License (MIT)
-├── 🧾 pak_urdu_phonetic.keyboard_info     # Metadata for Keyman index
-├── 🛠️ pak_urdu_phonetic.kpj               # Keyman project file
 ├── 📖 README.md                           # Project documentation (you’re here)
-├── 🖼️ assets/                             # Repo-related images & docs
-│   └── 🌐 intro_ur.webp                   # Urdu layout intro image
+├── 🛠️ pak_urdu_phonetic.kpj               # Keyman project file
+├── 📁 assets/                             # Repository-wide assets
+│   └── 🌐 intro_ur.png                    # Introduction in Urdu
 └── 💾 source/                             # Source files (editable)
     ├── 📁 help/
-    │   └── 📜 pak_urdu_phonetic.php       # PHP help file
+    │   └── 📜 pak_urdu_phonetic.php       # Help file (PHP for legacy support)
     ├── 🧠 pak_urdu_phonetic.kmn           # Keyboard layout logic
-    ├── 📦 pak_urdu_phonetic.kps           # Package definition for .kmp
-    ├── 📘 readme.htm                      # Help/instructions
-    ├── 🖼️ splash_screen.jpg               # Splash image
-    └── 📁 welcome/                        # Welcome screen assets
+    ├── 📦 pak_urdu_phonetic.kps           # Package definition
+    ├── ⌨️ pak_urdu_phonetic.kvks          # On-Screen Keyboard (touch layout)
+    ├── 📘 readme.htm                      # Help/instructions (HTML)
+    ├── 🖼️ splash_screen.jpg               # Splash image for welcome
+    └── 📁 welcome/                        # Welcome screen resources
+        ├── 🌐 intro_ur.png                # Urdu layout intro (duplicated?)
         ├── 🖼️ s1.png
         ├── 🖼️ s2.png
         ├── 🖼️ s3.png
         ├── 🖼️ s4.png
         └── 📗 welcome.htm                 # Welcome instructions
-
 ```
 
 ## 🐛 Troubleshooting
