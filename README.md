@@ -105,6 +105,8 @@ That's it! Start typing in any app.
 
 ### Regular Keys
 
+[![Regular Keys](assets/s1.png)](assets/s1.png)
+
 | Key | Character | Unicode |
 |-----|-----------|---------|
 | 0 | 0 | U+0030 |
@@ -157,6 +159,8 @@ That's it! Start typing in any app.
 
 ### Shift Keys
 
+[![Shift Keys](assets/s2.png)](assets/s2.png)
+
 | Key | Character | Unicode |
 |-----|-----------|---------|
 | 0 | ( | U+0028 |
@@ -208,6 +212,8 @@ That's it! Start typing in any app.
 
 ### AltGr (Right Alt) Keys
 
+[![AltGr Keys](assets/s3.png)](assets/s3.png)
+
 | Key | Character | Unicode |
 |-----|-----------|---------|
 | 0 | ۰ | U+06F0 |
@@ -250,7 +256,9 @@ That's it! Start typing in any app.
 | ' | ” | U+201D |
 | ] | ٘ | U+0658 |
 
-### AltGr + Shift K
+### AltGr + Shift Keys
+
+[![AltGr + Shift Keys](assets/s4.png)](assets/s4.png)
 
 | Key | Character | Unicode |
 |-----|-----------|---------|
@@ -275,6 +283,7 @@ That's it! Start typing in any app.
 | S | ۪ | U+06EA |
 | U | ٕ | U+0655 |
 | W | ۥ | U+06E5 |
+| X | ﷻ | U+FDFB |
 | Y | ۦ | U+06E6 |
 | ` | . | U+002E |
 | \ | ؃ | U+0603 |
