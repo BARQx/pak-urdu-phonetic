@@ -323,27 +323,40 @@ That's it! Start typing in any app.
 
 ```
 pak-urdu-phonetic/
-├── 📝 HISTORY.md                          # Version history
-├── 📄 LICENSE.md                          # License (MIT)
-├── 📖 README.md                           # Project documentation (you’re here)
-├── 🛠️ pak_urdu_phonetic.kpj               # Keyman project file
-├── 📁 assets/                             # Repository-wide assets
-│   └── 🌐 intro_ur.png                    # Introduction in Urdu
-└── 💾 source/                             # Source files (editable)
-    ├── 📁 help/
-    │   └── 📜 pak_urdu_phonetic.php       # Help file (PHP for legacy support)
-    ├── 🧠 pak_urdu_phonetic.kmn           # Keyboard layout logic
-    ├── 📦 pak_urdu_phonetic.kps           # Package definition
-    ├── ⌨️ pak_urdu_phonetic.kvks          # On-Screen Keyboard (touch layout)
-    ├── 📘 readme.htm                      # Help/instructions (HTML)
-    ├── 🖼️ splash_screen.jpg               # Splash image for welcome
-    └── 📁 welcome/                        # Welcome screen resources
-        ├── 🌐 intro_ur.png                # Urdu layout intro (duplicated?)
-        ├── 🖼️ s1.png
-        ├── 🖼️ s2.png
-        ├── 🖼️ s3.png
-        ├── 🖼️ s4.png
-        └── 📗 welcome.htm                 # Welcome instructions
+├── README.md                              # Root documentation for the entire project
+├── assets/                                # Repository-wide assets
+│   ├── intro_ur.png
+│   ├── s1.png
+│   ├── s2.png
+│   ├── s3.png
+│   └── s4.png
+├── Keyman/                                # Keyman (Windows/macOS/Linux) keyboard layout project
+│   ├── HISTORY.md                         # Keyman version history
+│   ├── LICENSE.md                         # License information (MIT)
+│   ├── pak_urdu_phonetic.kpj              # Keyman project file
+│   └── source/                            # Keyman source files
+│       ├── help/
+│       │   └── pak_urdu_phonetic.php      # PHP file for Keyman site-listing
+│       ├── pak_urdu_phonetic.kmn          # Main keyboard layout logic
+│       ├── pak_urdu_phonetic.kps          # Keyman package definition
+│       ├── pak_urdu_phonetic.kvk          # On-screen keyboard (desktop)
+│       ├── pak_urdu_phonetic.kvks         # On-screen keyboard (touch)
+│       ├── readme.htm                     # Installer screen readme file
+│       ├── splash_screen.jpg              # Installer screen splash image
+│       └── welcome/                       # Welcome screen resources
+│           ├── intro_ur.png
+│           ├── s1.png
+│           ├── s2.png
+│           ├── s3.png
+│           ├── s4.png
+│           └── welcome.htm               # Welcome instructions in HTML
+├── XKB/                                   # XKB (Linux) keyboard layout project
+│   ├── HISTORY.md                         # XKB version history
+│   ├── rules/
+│   │   └── base.xml                       # XKB layout listing entry
+│   └── symbols/
+│       └── pk                             # XKB keyboard layout logic for 'pk'
+
 ```
 
 ## 🐛 Troubleshooting
