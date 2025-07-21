@@ -1,4 +1,4 @@
-[![Introduction to Pak Urdu Phonetic](assets/intro_ur.png)](assets/intro_ur.png)
+[![Introduction to Pak Urdu Phonetic](_assets/intro_ur.png)](_assets/intro_ur.png)
 
 > As someone who regularly works in Urdu — whether writing, researching, or just chatting — I’ve always relied on Pak Urdu Installer on Windows. Its phonetic layout made typing fast, intuitive, and effortless. For years, it just worked.
 >
@@ -105,7 +105,7 @@ That's it! Start typing in any app.
 
 ### Regular Keys
 
-[![Regular Keys](assets/s1.png)](assets/s1.png)
+[![Regular Keys](_assets/s1.png)](_assets/s1.png)
 
 | Key | Character | Unicode |
 |-----|-----------|---------|
@@ -159,7 +159,7 @@ That's it! Start typing in any app.
 
 ### Shift Keys
 
-[![Shift Keys](assets/s2.png)](assets/s2.png)
+[![Shift Keys](_assets/s2.png)](_assets/s2.png)
 
 | Key | Character | Unicode |
 |-----|-----------|---------|
@@ -212,7 +212,7 @@ That's it! Start typing in any app.
 
 ### AltGr (Right Alt) Keys
 
-[![AltGr Keys](assets/s3.png)](assets/s3.png)
+[![AltGr Keys](_assets/s3.png)](_assets/s3.png)
 
 | Key | Character | Unicode |
 |-----|-----------|---------|
@@ -258,7 +258,7 @@ That's it! Start typing in any app.
 
 ### AltGr + Shift Keys
 
-[![AltGr + Shift Keys](assets/s4.png)](assets/s4.png)
+[![AltGr + Shift Keys](_assets/s4.png)](_assets/s4.png)
 
 | Key | Character | Unicode |
 |-----|-----------|---------|
@@ -324,7 +324,7 @@ That's it! Start typing in any app.
 ```
 pak-urdu-phonetic/
 ├── README.md                              # Root documentation for the entire project
-├── assets/                                # Repository-wide assets
+├── _assets/                                # Repository-wide assets
 │   ├── intro_ur.png
 │   ├── s1.png
 │   ├── s2.png
