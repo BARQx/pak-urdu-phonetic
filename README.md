@@ -294,7 +294,7 @@ That's it! Start typing in any app.
 | ' | ’ | U+2019 |
 | / | ۛ | U+06DB |
 
-- **Total mappings:** 163
+- **Total mappings:** 164
 - **Total physical keys (K_):** 47
 - **Total key + modifier combos:** 163
 
