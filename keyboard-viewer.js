@@ -395,34 +395,28 @@ class KeyboardViewer extends HTMLElement {
 
 
   showZoom(event, char) {
-    const zoomBox = this.shadowRoot.getElementById('zoomPreview');
-    const zoomChar = this.shadowRoot.getElementById('zoomChar');
-    const zoomCode = this.shadowRoot.getElementById('zoomCode');
+  const zoomBox = this.shadowRoot.getElementById('zoomPreview');
+  const zoomChar = this.shadowRoot.getElementById('zoomChar');
+  const zoomCode = this.shadowRoot.getElementById('zoomCode');
 
-    zoomChar.textContent = char;
-    zoomCode.textContent = `Unicode: U+${char.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}`;
+  zoomChar.textContent = char;
+  zoomCode.textContent = `Unicode: U+${char.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}`;
 
-    const clientX = event.clientX || (event.touches && event.touches[0].clientX);
-    const clientY = event.clientY || (event.touches && event.touches[0].clientY);
+  // Always center the popup
+  zoomBox.style.left = '50%';
+  zoomBox.style.top = '50%';
+  zoomBox.style.transform = 'translate(-50%, -50%)';
 
-    if (clientX && clientY) {
-      zoomBox.style.left = `${clientX + 20}px`;
-      zoomBox.style.top = `${clientY - 20}px`;
-    } else {
-      zoomBox.style.left = '50%';
-      zoomBox.style.top = '50%';
-      zoomBox.style.transform = 'translate(-50%, -50%)';
-    }
+  zoomBox.style.display = 'block';
+  setTimeout(() => {
+    zoomBox.style.opacity = 1;
+  }, 10);
 
-    zoomBox.style.display = 'block';
-    setTimeout(() => {
-      zoomBox.style.opacity = 1;
-    }, 10);
-
-    if (event.touches) {
-      event.preventDefault();
-    }
+  if (event.touches) {
+    event.preventDefault();
   }
+}
+
 }
 
 
