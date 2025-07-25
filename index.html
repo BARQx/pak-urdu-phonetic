@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Start Using Pak Urdu Phonetic</title>
+  <script type="module" src="keyboard-viewer.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
   /* Reset & base */
@@ -16,146 +17,340 @@
   }
 
   body {
-    font-family: 'Georgia', serif;
-    background: #f8eeee;
-    color: #222;
-    line-height: 1.6;
+    font-family: 'Noto Sans', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+    line-height: 1.7;
     padding: 2rem;
+    background-image: linear-gradient(to bottom, #f5f7fa 0%, #f9f9f9 100%);
   }
 
   .container {
-    max-width: 650px;
-    margin: auto;
+    max-width: 750px;
+    margin: 2rem auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   }
 
   h1, h2, h3 {
-    font-weight: normal;
-    margin: 2rem 0 1rem;
+    font-weight: 600;
+    margin: 2.5rem 0 1.5rem;
+    color: #2c3e50;
   }
 
-  h1 { font-size: 1.75rem; }
-  h2 { font-size: 1.4rem; }
-  h3 { font-size: 1.2rem; }
+  h1 { 
+    font-size: 2.2rem; 
+    line-height: 1.3;
+  }
+  h2 { 
+    font-size: 1.6rem; 
+    border-bottom: 2px solid #eaecef;
+    padding-bottom: 0.6rem;
+  }
+  h3 { 
+    font-size: 1.3rem; 
+    margin-top: 2rem;
+  }
 
   p, li {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    font-size: 1.05rem;
+    margin-bottom: 1.2rem;
+    color: #444;
+  }
+
+  ul, ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   ul {
     list-style: disc;
-    padding-left: 1.5rem;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+
+  li {
+    margin-bottom: 0.7rem;
   }
 
   a {
-    color: #005f5f;
-    text-decoration: underline;
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
   }
 
   a:hover {
-    color: #000;
+    color: #3498db;
+    text-decoration: underline;
   }
 
   img {
     max-width: 100%;
     height: auto;
     margin: 1.5rem 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
 
   code {
-    font-family: monospace;
-    background: #eee;
-    padding: 0.1rem 0.3rem;
-    border-radius: 2px;
+    font-family: 'Fira Code', monospace;
+    background: #f5f7fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #d63384;
+  }
+
+  pre code {
+    display: block;
+    padding: 1rem;
+    overflow-x: auto;
   }
 
   table {
     width: 100%;
     border-collapse: collapse;
-    margin: 1.5rem 0;
+    margin: 2rem 0;
     font-size: 0.95rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  th {
+    background: #f8f9fa;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
+    color: #6c757d;
   }
 
   th, td {
-    border: 1px solid #ccc;
-    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
     text-align: left;
+  }
+
+  td {
     font-family: "Noto Nastaliq Urdu";
-    font-size:1rem;
+    font-size: 1.1rem;
   }
 
   .credit {
     text-align: center;
-    margin-top: 3rem;
-    font-size: 0.85rem;
-    color: #666;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eee;
+    font-size: 0.9rem;
+    color: #6c757d;
   }
-  div.intro_ur p {
+
+  .intro_ur p {
     font-family: "Noto Nastaliq Urdu";
     direction: rtl;
-    line-height: 2rem;;
-    margin-bottom: 40px;
+    line-height: 2.2rem;
+    margin-bottom: 1.8rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+
+  .welcome-message {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2.5rem 0;
+    border-left: 4px solid #2980b9;
+  }
+
+  .welcome-message p {
+    margin-bottom: 1rem;
+  }
+
+  .platform-title {
+    color: #157347;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    margin: 1.5rem 0 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .platform-title::before {
+    content: "";
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .section {
+    margin-top: 1.5rem;
+  }
+
+  .code-block {
+    background: #2d3748;
+    color: #f8f9fa;
+    padding: 1.2rem;
+    border-radius: 8px;
+    font-family: 'Fira Code', monospace;
+    overflow-x: auto;
+    margin: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .code-block code {
+    background: transparent;
+    color: inherit;
+    padding: 0;
+  }
+
+  .bordered {
+    padding: 1.2rem;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    background: #f8f9fa;
+    margin: 1.5rem 0;
+    text-align: center;
+  }
+
+  .summary {
+    background: #f1f8fe;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin: 2rem 0;
+    text-align: center;
+    border: 1px solid #d0e3ff;
+  }
+
+  .summary p {
+    margin: 0;
+    font-weight: 600;
+    color: #2c3e50;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    body {
+      padding: 1rem;
+    }
+    
+    .container {
+      padding: 1.5rem;
+    }
+    
+    h1 {
+      font-size: 1.8rem;
+    }
+    
+    .intro_ur p {
+      font-size: 1.1rem;
+      line-height: 2rem;
+    }
   }
 </style>
-
 
 </head>
 <body>
 <div class="container">
 
-<h1 style="text-align:center; direction: rtl; font-family: Noto Nastaliq Urdu;">خوش آمدید!</h1>
+<h1 style="text-align:center; direction: rtl; font-family: Noto Nastaliq Urdu; color: #2c3e50; margin-top: 1rem;">خوش آمدید!</h1>
 
 <div class="intro_ur"> 
-
-
     <p>
-
       اگر آپ بھی میری طرح اُردُو میں لکھتے ہیں، تحقیق (research) کرتے ہیں یا دل کی بات کسی سے کہتے ہیں —  تو یقیناًآپ واقف ہوں گے کہ ایک اچھا کی بورڈلے آؤٹ (keyboard layout)  کس قدر اہمیت کا حامل ہوتا ہے۔ میں برسوں سے ونڈوز (Windows) پر پاک اُردُو انسٹالر استعمال کرتا آ رہا ہوں۔ اُس کا فونیٹک لے آؤٹ (phonetic layout) ایسا ہے جیسے اُنگلیوں کی زبان سمجھتا ہو؛ آسان اور فطری۔ مگر جب بھی لینکس (Linux) پر منتقل ہونے کی کوشش کی، ایک چیز نے ہمیشہ مجھے روکے رکھا: اُردُو کے لیے ایسا کوئی کی بورڈلے آؤٹ ہی نہیں تھا جو مکمل (polished)، خوبصورت اور فیچر رِچ (feature-rich) ہو۔ ونڈوز جیسا سکون کہیں نہ مِلا۔  
-
     </p>
 
     <p>
-
 یہی وہ خلاءتھا جسے پُر کرنے کا عزم کیا۔
-
     </p>
 
-
     <p>
-
 یہ پراجیکٹ پاک اُردُو انسٹالر کا ایک خالص، محبت بھرا پورٹ(port) ہے۔ ایسا لے آؤٹ جو اُردُو لکھنے والوں کو ہر پلیٹ فارم (platform) پر اپنائیت کا احساس دے، چاہے وہ لینکس (Linux) ہو، ونڈوز (Windows) ہو یا میک او ایس(macOS)۔ اگر آپ بھی کبھی سوچتے رہے ہیں کہ لینکس (Linux) پر اُردُو صحیح طریقے سے کیسے لکھی جائے— اور کوئی موزوں حل (solution) نہیں ملا—
-
     </p>
 
-
     <p>
-
 تو شاید آپ کی تلاش اب ختم ہو چُکی ہے۔
     </p>
 
-    <p>
+
+   <p>
 — ناشط احمد برقؔ
 <br />
-
 ۲۳ جولائی، ۲۰۲۵ء
     </p>
 
 </div>
 
   <div class="welcome-message">
-  <p><strong>Pak Urdu Phonetic</strong> is an Urdu keyboard layout faithfully ported from the popular Windows-based <a href="https://mbilalm.com/urdu-installer.php">Pak Urdu Installer</a> layout by <strong>mBilalm</strong>. It offers the same simple, intuitive phonetic typing experience and brings this widely adopted standard to the Keyman platform for cross-platform use.</p>
+    <p><strong>Pak Urdu Phonetic</strong> is an Urdu keyboard layout faithfully ported from the popular Windows-based <a href="https://mbilalm.com/urdu-installer.php">Pak Urdu Installer</a> layout by <strong>mBilalm</strong>. It offers the same simple, intuitive phonetic typing experience and brings this widely adopted standard to the Keyman platform for cross-platform use.</p>
 
-<p><strong>With over 160+ unique key mappings</strong> across regular, Shift, AltGr (Right Alt), and Shift+AltGr combinations, this layout offers the most complete phonetic Urdu typing solution available — more comprehensive than any previous Urdu keyboard layout to date.</p>
+    <p><strong>With over 160+ unique key mappings</strong> across regular, Shift, AltGr (Right Alt), and Shift+AltGr combinations, this layout offers the most complete phonetic Urdu typing solution available — more comprehensive than any previous Urdu keyboard layout to date.</p>
   </div>
+
+<div class="installation">
+  <h2>🚀 Install via Keyman</h2>
+  
+  <h3 class="platform-title">🐧 Linux (Ubuntu/Debian)</h3>
+  <div class="code-block"><code>sudo add-apt-repository ppa:keymanapp/keyman
+sudo apt update
+sudo apt install keyman</code></div>
+
+  <p><strong>Other Linux distributions:</strong> Download from 
+    <a href="https://keyman.com/linux" target="_blank">keyman.com/linux</a>
+  </p>
+
+  <h3 class="platform-title">🪟 Windows</h3>
+  <p>Download and install 
+    <a href="https://keyman.com/windows" target="_blank">Keyman for Windows</a>
+  </p>
+
+  <h3 class="platform-title">🍎 macOS</h3>
+  <p>Download and install 
+    <a href="https://keyman.com/mac" target="_blank">Keyman for macOS</a>
+  </p>
+
+  <h3 class="section">📥 Install the Urdu Keyboard</h3>
+  <ol>
+    <li>Visit 
+      <a href="https://keyman.com/keyboards/pak_urdu_phonetic" target="_blank">Pak Urdu Phonetic keyboard page</a>
+    </li>
+    <li>Download the <code>pak_urdu_phonetic.kmp</code> package</li>
+    <li>Double-click the downloaded file (it will open in Keyman)</li>
+    <li>Click "Install" when prompted</li>
+  </ol>
+
+  <h3 class="section">⌨️ Using the Keyboard</h3>
+  <ol>
+    <li>Click the Keyman icon in your system tray (Windows), menu bar (macOS), or system tray (Linux)</li>
+    <li>Select "Pak Urdu Phonetic" from the list of available keyboards</li>
+    <li>Start typing in Urdu using the familiar phonetic layout!</li>
+  </ol>
+
+  <h3 style="margin-top: 1.2em;">🛠️ Alternate Method (Linux Only)</h3>
+<p>Coming soon: Pak Urdu Phonetic will also be available as a built-in Linux keyboard layout using the standard XKB system.</p>
+
+<p>This system-level installation method won’t require Keyman and will allow you to select “Pak Urdu Phonetic” directly from your system’s language or keyboard settings.</p>
+
+<p><em>Note:</em> This feature is currently under review and will be available in future Linux distributions once approved.</p>
+
+
+</div>
 
 
   <div class="keyboard-section">
-  <h2 style="text-align: center;">⌨️ Pak Urdu Phonetic - Keyboard Layout Mapping</h2>
+    <h2 class="bordered">⌨️ Pak Urdu Phonetic - Keyboard Layout Mapping</h2>
 
-  <h3 style="text-align: center;">Base Layout
-</h3>
-   <img src="imgs/s1.png" alt="Regular Layout"/>
-            <table>
+    <keyboard-viewer></keyboard-viewer>
+
+    <h3 class="bordered">Base Layout</h3>
+
+      <table>
             <thead>
                 <tr>
                     <th>Key</th>
@@ -401,10 +596,11 @@
                 </tr>
             </tbody>
         </table>
-   <h3 style="text-align: center;">Shift Layout
-</h3>
-   <img src="imgs/s2.png" alt="Shift Layout"/>
-       <table>
+
+    <h3 class="bordered">Shift Layout</h3>
+
+
+     <table>
             <thead>
                 <tr>
                     <th>Key</th>
@@ -651,11 +847,11 @@
             </tbody>
         </table>
 
-   <h3 style="text-align: center;">AltGr (Right Alt) Layout
-</h3>
-  <img src="imgs/s3.png" alt="AltGr Layout"/>
 
-  <table>
+    <h3 class="bordered">AltGr (Right Alt) Layout</h3>
+
+
+      <table>
             <thead>
                 <tr>
                     <th>Key</th>
@@ -862,11 +1058,11 @@
             </tbody>
         </table>
 
-  <h3 style="text-align: center;">AltGr + Shift Layout
-</h3>
-  <img src="imgs/s4.png" alt="AltGr + Shift Layout"/>
 
-   <table>
+
+    <h3 class="bordered">AltGr + Shift Layout</h3>
+    
+      <table>
             <thead>
                 <tr>
                     <th>Key</th>
@@ -1035,19 +1231,28 @@
 
 
     <div class="summary">
-      <p style="text-align: center; font-size: 1.2em;">Total Keys: 47 | Total Mappings: 164</p>
+      <p>Total Keys: 47 | Total Mappings: 164</p>
     </div>
   </div>
 
-  <h2>📖 Need Help?</h2>
-  <p>If you encounter any issues or have suggestions, please visit the <a href="https://github.com/NashitAhmedBarq/pak-urdu-phonetic">project repository</a> and open an issue. For Keyman-specific questions, consult the <a href="https://keyman.com/support/">Keyman support documentation</a>.</p>
+  <h2>❓ Need Help?</h2>
+  <p>If you encounter any issues or have suggestions for improvement:</p>
+  <ul>
+    <li>Visit the <a href="https://github.com/NashitAhmedBarq/pak-urdu-phonetic">project repository</a> to report issues</li>
+    <li>Consult the <a href="https://keyman.com/support/">Keyman support documentation</a> for general help</li>
+    <li>Check the <a href="https://keyman.com/keyboards/pak_urdu_phonetic">keyboard documentation</a> for specific usage questions</li>
+  </ul>
 
   <div class="credit">
-    <p><strong>Credits:</strong><br><br>
-    Original keyboard layout by <strong>mBilalm</strong> —
-    <a href="https://mbilalm.com/urdu-installer.php">Pak Urdu Installer</a><br>
-    Ported to Keyman and X.Org (Linux XKB) by <strong>Nashit Ahmed Barq</strong> (<a href="https://barqx.github.io">@BARQx</a>)
-</p>
+    <p><strong>Credits & Acknowledgments</strong></p>
+    <p>Original keyboard layout by <strong>mBilalm</strong> — 
+      <a href="https://mbilalm.com/urdu-installer.php">Pak Urdu Installer</a><br>
+      Ported to Keyman and X.Org (Linux XKB) by <strong>Nashit Ahmed Barq</strong> 
+      (<a href="https://barqx.github.io">@BARQx</a>)
+    </p>
+    <p style="margin-top: 1rem; font-size: 0.8rem;">
+      Made with ❤️ for the Urdu-speaking community
+    </p>
   </div>
 </div>
 </body>
