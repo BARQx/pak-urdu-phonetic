@@ -51,10 +51,11 @@ class KeyboardViewer extends HTMLElement {
 
     .container {
       text-align: center;
-      max-width: 1000px;
+      width: 100%;
       margin: 0 auto;
-      padding: 1rem;
+      padding: 0.5rem;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
     }
 
     h1 {
@@ -68,48 +69,59 @@ class KeyboardViewer extends HTMLElement {
     }
 
     .keyboard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 1.5rem auto;
-  background: #e9e9e9;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px var(--key-shadow);
-  user-select: none;
-}
-
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem auto;
+      background: #e9e9e9;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px var(--key-shadow);
+      user-select: none;
+      width: 100%;
+      max-width: 800px;
+      box-sizing: border-box;
+    }
 
     .row {
       display: flex;
       justify-content: center;
-      margin: 16px 0;
+      margin: 8px 0;
+      width: 100%;
+      flex-wrap: nowrap;
     }
 
     .key-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 3px;
+      margin: 2px;
       user-select: none;
       pointer-events: none;
+      flex: 1 0 auto;
+      min-width: 0;
     }
 
     .eng-outside {
-      font-size: 13px;
+      font-size: 10px;
       color: var(--key-secondary-text);
       font-weight: 600;
-      margin-bottom: 4px;
+      margin-bottom: 2px;
       text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      width: 100%;
+      text-align: center;
     }
 
     .key {
       border: 1px solid var(--key-border);
       background: var(--key-bg);
-      border-radius: 8px;
-      height: 60px;
-      min-width: 40px;
+      border-radius: 6px;
+      height: 48px;
+      min-width: 24px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -120,6 +132,9 @@ class KeyboardViewer extends HTMLElement {
       pointer-events: auto;
       user-select: none;
       cursor: default;
+      flex: 1 0 auto;
+      width: 100%;
+      padding: 2px;
     }
 
     .key:active, .key.active {
@@ -130,32 +145,32 @@ class KeyboardViewer extends HTMLElement {
       border: 1px solid #ABFFBB;
     }
 
-    .key.wide { min-width: 70px; }
-    .key.xwide { min-width: 110px; }
-    .key.xxwide { min-width: 250px; }
+    .key.wide { flex-grow: 1.5; }
+    .key.xwide { flex-grow: 2; }
+    .key.xxwide { flex-grow: 5; }
 
     .urdu {
-      font-size: 22px;
+      font-size: 18px;
       font-weight: bold;
       font-family: "Noto Nastaliq Urdu", serif;
       color: var(--key-text);
     }
 
-    .urdu.diacritic { font-size: 28px !important; }
-    .urdu.large { font-size: 32px !important; }
-    .urdu.extra-large { font-size: 36px !important; }
+    .urdu.diacritic { font-size: 22px !important; }
+    .urdu.large { font-size: 24px !important; }
+    .urdu.extra-large { font-size: 26px !important; }
 
     #layers {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      margin: 1rem 0;
-      gap: 8px;
+      margin: 0.5rem 0;
+      gap: 6px;
     }
 
     #layers button {
-      padding: 8px 16px;
-      font-size: 0.95rem;
+      padding: 6px 12px;
+      font-size: 0.85rem;
       border: none;
       border-radius: 6px;
       background: var(--key-bg);
@@ -175,7 +190,7 @@ class KeyboardViewer extends HTMLElement {
     }
 
     #zoomPreview {
-      position: absolute;
+      position: fixed;
       z-index: 1000;
       background: white;
       border: 2px solid #4a6fa5;
@@ -186,6 +201,7 @@ class KeyboardViewer extends HTMLElement {
       pointer-events: auto;
       transition: opacity 0.1s ease;
       opacity: 0;
+      max-width: 90vw;
     }
 
     #zoomChar {
@@ -217,15 +233,51 @@ class KeyboardViewer extends HTMLElement {
       color: #000;
     }
 
-    @media (max-width: 768px) {
-      .key { height: 50px; min-width: 30px; padding: 4px; }
-      .eng-outside { font-size: 11px; }
-      .urdu { font-size: 18px; }
-      .urdu.diacritic { font-size: 24px !important; }
-      .urdu.large { font-size: 28px !important; }
-      .urdu.extra-large { font-size: 30px !important; }
-      .key.xwide { min-width: 80px; }
-      .key.xxwide { min-width: 180px; }
+    @media (max-width: 480px) {
+      .key {
+        height: 40px;
+        min-width: 18px;
+        border-radius: 4px;
+      }
+
+      .urdu {
+        font-size: 16px;
+      }
+
+      .urdu.diacritic { font-size: 18px !important; }
+      .urdu.large { font-size: 20px !important; }
+      .urdu.extra-large { font-size: 22px !important; }
+
+      .eng-outside {
+        font-size: 8px;
+      }
+
+      #layers button {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+      }
+
+      .keyboard {
+        padding: 8px;
+      }
+
+      .row {
+        margin: 4px 0;
+      }
+    }
+
+    @media (max-width: 360px) {
+      .key {
+        height: 36px;
+      }
+
+      .urdu {
+        font-size: 14px;
+      }
+
+      .urdu.diacritic { font-size: 16px !important; }
+      .urdu.large { font-size: 18px !important; }
+      .urdu.extra-large { font-size: 20px !important; }
     }
     `;
   }
