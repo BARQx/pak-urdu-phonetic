@@ -46,9 +46,11 @@ It's designed specifically for Pakistani Urdu typing conventions and works exact
 
 ## 📥 Installation Instructions and Keymap
 
-Detailed installation steps and the full keymap are available at:
+💡 **Looking to install the keyboard or view the full keymap?**
 
-[https://barqx.github.io/pak-urdu-phonetic](https://barqx.github.io/pak-urdu-phonetic)
+Visit the official project page for complete step-by-step instructions and a visual layout of all key mappings:
+
+**[barqx.github.io/pak-urdu-phonetic](https://barqx.github.io/pak-urdu-phonetic)**
 
 ## 🔧 For Developers
 
