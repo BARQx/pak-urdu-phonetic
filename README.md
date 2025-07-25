@@ -18,6 +18,14 @@
 
 **With over 160+ unique key mappings** across regular, Shift, AltGr (Right Alt), and Shift+AltGr combinations, this layout offers the most complete phonetic Urdu typing solution available — more comprehensive than any previous Urdu keyboard layout to date.
 
+## 📥 Installation Instructions and Keymap
+
+💡 **Looking to install the keyboard or view the full keymap?**
+
+Visit the official project page for complete step-by-step instructions and a visual layout of all key mappings:
+
+**[barqx.github.io/pak-urdu-phonetic](https://barqx.github.io/pak-urdu-phonetic)**
+
 
 ## What is this?
 
@@ -43,14 +51,6 @@ It's designed specifically for Pakistani Urdu typing conventions and works exact
 | Windows 10/11 | ✅ Fully Supported | Keyman |
 | Linux (Ubuntu/Debian) | ✅ Fully Supported | Keyman |
 | macOS | ✅ Fully Supported | Keyman |
-
-## 📥 Installation Instructions and Keymap
-
-💡 **Looking to install the keyboard or view the full keymap?**
-
-Visit the official project page for complete step-by-step instructions and a visual layout of all key mappings:
-
-**[barqx.github.io/pak-urdu-phonetic](https://barqx.github.io/pak-urdu-phonetic)**
 
 ## 🔧 For Developers
 
