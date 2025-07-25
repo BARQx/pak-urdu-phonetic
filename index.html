@@ -97,19 +97,23 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
   }
 
-  code {
+  .terminal-block {
+    background: #1e1e1e;
+    color: #e5e5e5;
     font-family: 'Fira Code', monospace;
-    background: #f5f7fa;
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    color: #d63384;
-  }
-
-  pre code {
-    display: block;
+    border-radius: 6px;
     padding: 1rem;
     overflow-x: auto;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .terminal-block code {
+    color: inherit;
+    background: none;
+    padding: 0;
+    display: block;
+    font-size: 0.9rem;
   }
 
   table {
@@ -214,7 +218,7 @@
     padding: 1.2rem;
     border: 2px solid #e9ecef;
     border-radius: 10px;
-    background: #f8f9fa;
+    background: #d0ebff;
     margin: 1.5rem 0;
     text-align: center;
   }
@@ -296,10 +300,12 @@
 <div class="installation">
   <h2>🚀 Install via Keyman</h2>
   
-  <h3 class="platform-title">🐧 Linux (Ubuntu/Debian)</h3>
-  <div class="code-block"><code>sudo add-apt-repository ppa:keymanapp/keyman
+<h3 class="platform-title">🐧 Linux (Ubuntu/Debian)</h3>
+<div class="terminal-block">
+<pre><code>sudo add-apt-repository ppa:keymanapp/keyman
 sudo apt update
-sudo apt install keyman</code></div>
+sudo apt install keyman</code></pre>
+</div>
 
   <p><strong>Other Linux distributions:</strong> Download from 
     <a href="https://keyman.com/linux" target="_blank">keyman.com/linux</a>
@@ -344,7 +350,7 @@ sudo apt install keyman</code></div>
 
 
   <div class="keyboard-section">
-    <h2 class="bordered">⌨️ Pak Urdu Phonetic - Keyboard Layout Mapping</h2>
+    <h2 style="text-align: center;">Pak Urdu Phonetic <br /> Keyboard Layout Mapping</h2>
 
     <keyboard-viewer></keyboard-viewer>
 
