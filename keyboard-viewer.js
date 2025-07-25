@@ -49,7 +49,7 @@ class KeyboardViewer extends HTMLElement {
       --header-text: #ffffff;
     }
 
-    .container {
+     .container {
       text-align: center;
       width: 100%;
       margin: 0 auto;
@@ -68,7 +68,7 @@ class KeyboardViewer extends HTMLElement {
       box-shadow: 0 2px 4px var(--key-shadow);
     }
 
-    .keyboard {
+  .keyboard {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -92,7 +92,7 @@ class KeyboardViewer extends HTMLElement {
       flex-wrap: nowrap;
     }
 
-    .key-wrapper {
+     .key-wrapper {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -116,7 +116,7 @@ class KeyboardViewer extends HTMLElement {
       text-align: center;
     }
 
-    .key {
+       .key {
       border: 1px solid var(--key-border);
       background: var(--key-bg);
       border-radius: 6px;
@@ -131,7 +131,7 @@ class KeyboardViewer extends HTMLElement {
       box-sizing: border-box;
       pointer-events: auto;
       user-select: none;
-      cursor: default;
+      cursor: pointer;
       flex: 1 0 auto;
       width: 100%;
       padding: 2px;
@@ -202,7 +202,10 @@ class KeyboardViewer extends HTMLElement {
       transition: opacity 0.1s ease;
       opacity: 0;
       max-width: 90vw;
+      display: none;
     }
+
+
 
     #zoomChar {
       font-size: 48px;
@@ -293,7 +296,8 @@ class KeyboardViewer extends HTMLElement {
       });
     });
 
-    this.shadowRoot.getElementById('zoomClose').addEventListener('click', () => {
+    this.shadowRoot.getElementById('zoomClose').addEventListener('click', (e) => {
+      e.stopPropagation();
       const zoomBox = this.shadowRoot.getElementById('zoomPreview');
       zoomBox.style.opacity = 0;
       setTimeout(() => (zoomBox.style.display = 'none'), 200);
@@ -389,17 +393,37 @@ class KeyboardViewer extends HTMLElement {
     }
   }
 
+
   showZoom(event, char) {
     const zoomBox = this.shadowRoot.getElementById('zoomPreview');
     const zoomChar = this.shadowRoot.getElementById('zoomChar');
     const zoomCode = this.shadowRoot.getElementById('zoomCode');
+
     zoomChar.textContent = char;
     zoomCode.textContent = `Unicode: U+${char.codePointAt(0).toString(16).toUpperCase().padStart(4, '0')}`;
-    zoomBox.style.left = `${event.pageX + 20}px`;
-    zoomBox.style.top = `${event.pageY - 20}px`;
+
+    const clientX = event.clientX || (event.touches && event.touches[0].clientX);
+    const clientY = event.clientY || (event.touches && event.touches[0].clientY);
+
+    if (clientX && clientY) {
+      zoomBox.style.left = `${clientX + 20}px`;
+      zoomBox.style.top = `${clientY - 20}px`;
+    } else {
+      zoomBox.style.left = '50%';
+      zoomBox.style.top = '50%';
+      zoomBox.style.transform = 'translate(-50%, -50%)';
+    }
+
     zoomBox.style.display = 'block';
-    zoomBox.style.opacity = 1;
+    setTimeout(() => {
+      zoomBox.style.opacity = 1;
+    }, 10);
+
+    if (event.touches) {
+      event.preventDefault();
+    }
   }
 }
+
 
 customElements.define('keyboard-viewer', KeyboardViewer);
