@@ -79,7 +79,7 @@ It's designed specifically for Pakistani Urdu typing conventions and works exact
 pak-urdu-phonetic/
 ├── README.md                              # Root documentation for the entire project
 ├── assets/                                # Repository-wide assets
-│   ├── intro_ur.png
+│   └── intro_ur.png
 ├── Keyman/                                # Keyman (Windows/macOS/Linux) keyboard layout project
 │   ├── HISTORY.md                         # Keyman version history
 │   ├── LICENSE.md                         # License information (MIT)
@@ -99,13 +99,19 @@ pak-urdu-phonetic/
 │           ├── s3.png
 │           ├── s4.png
 │           └── welcome.htm               # Welcome instructions in HTML
-├── XKB/                                   # XKB (Linux) keyboard layout project
-│   ├── HISTORY.md                         # XKB version history
-│   ├── rules/
-│   │   └── base.xml                       # XKB layout listing entry
-│   └── symbols/
-│       └── pk                             # XKB keyboard layout logic for 'pk'
-
+├── KMN-XKB-Converter/                     # Conversion utilities for my ease of use
+│   ├── kmn_to_xkb.py                      # Script to convert Keyman .kmn → XKB .xkb
+│   ├── xkb_to_kmn.py                      # Script to convert XKB .xkb → Keyman .kmn
+│   ├── keyboard.kmn                       # Sample/converted Keyman file
+│   ├── keyboard.xkb                       # Sample/converted XKB file
+│   ├── kmn_xkb_compare.py                 # Comparison utility script
+│   └── kmn_xkb_compare.csv                # Comparison output data
+└── XKB/                                   # XKB (Linux) keyboard layout project
+    ├── HISTORY.md                         # XKB version history
+    ├── rules/
+    │   └── base.xml                       # XKB layout listing entry
+    └── symbols/
+        └── pk                             # XKB keyboard layout logic for 'pk'
 ```
 
 ## 🐛 Troubleshooting
