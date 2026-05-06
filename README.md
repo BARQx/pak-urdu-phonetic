@@ -1,16 +1,16 @@
 [![Introduction to Pak Urdu Phonetic](assets/intro_ur.png)](assets/intro_ur.png)
 
-> As someone who regularly works in Urdu — whether writing, researching, or just chatting — I’ve always relied on Pak Urdu Installer on Windows. Its phonetic layout made typing fast, intuitive, and effortless. For years, it just worked.
+> As someone who regularly works in Urdu — whether writing, researching, or just chatting — I've always relied on Pak Urdu Installer on Windows. Its phonetic layout made typing fast, intuitive, and effortless. For years, it just worked.
 >
 > But every time I tried to seriously use Linux (especially on my laptop), the lack of a polished, feature-rich Urdu layout always pulled me back. No layout matched the familiarity or usability of what we had on Windows.
 >
 > This project is my attempt to bridge that gap.
 >
-> It’s a faithful port of Pak Urdu Installer, a layout that feels like home for Urdu users across  platforms: Linux, Windows, and even the macOS.
+> It's a faithful port of Pak Urdu Installer, a layout that feels like home for Urdu users across platforms: Linux, Windows, and even macOS.
 >
-> If you’ve ever wanted to type Urdu properly on Linux and couldn’t find “the one,” this might be it.
+> If you've ever wanted to type Urdu properly on Linux and couldn't find "the one," this might be it.
 >
->  — Nashit Ahmed Barq
+> — Nashit Ahmed Barq
 
 # Pak Urdu Phonetic
 
@@ -20,25 +20,13 @@
 
 ## 📥 Installation Instructions and Keymap
 
-💡 **Looking to install the keyboard or view the full keymap?**
-
 Visit the official project page for complete step-by-step instructions and a visual layout of all key mappings:
 
 **[barqx.github.io/pak-urdu-phonetic](https://barqx.github.io/pak-urdu-phonetic)**
 
-
-## What is this?
-
-This keyboard layout lets you type Urdu text using standard English keys in a phonetic way. For example:
-- Press `A` to get `ا`
-- Press `B` to get `ب` 
-- Press `P` to get `پ`
-
-It's designed specifically for Pakistani Urdu typing conventions and works exactly like the popular Windows-only Pak Urdu Installer.
-
 ## 🌟 Features
 
-- **Phonetic Layout:** Type Urdu using English phonetic sounds
+- **Phonetic Layout:** Type Urdu using English phonetic sounds — `A` → `ا`, `B` → `ب`, `P` → `پ`
 - **Keyman Compatible:** Designed specifically for Keyman implementation
 - **Unicode Support:** Proper rendering of Urdu characters
 - **Cross-Platform:** Works across Linux, Windows, and macOS via Keyman, with support for both physical and on-screen keyboards
@@ -47,9 +35,10 @@ It's designed specifically for Pakistani Urdu typing conventions and works exact
 ## 📱 Platform Support
 
 | Platform | Status | Installation Method |
-|----------|--------|-------------------|
+|----------|--------|---------------------|
 | Windows 10/11 | ✅ Fully Supported | Keyman |
-| Linux (Ubuntu/Debian) | ✅ Fully Supported | Keyman |
+| Linux (Ubuntu 26.04 LTS+) | ✅ Fully Supported | Native XKB (built-in) |
+| Linux (older distros) | ✅ Fully Supported | Keyman |
 | macOS | ✅ Fully Supported | Keyman |
 
 ## 🔧 For Developers
@@ -61,11 +50,13 @@ It's designed specifically for Pakistani Urdu typing conventions and works exact
 - Git
 
 **Build Steps:**
+
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/nashitahmedbarq/pak-urdu-phonetic.git
-   cd pak-urdu-phonetic
-   ```
+
+```bash
+git clone https://github.com/nashitahmedbarq/pak-urdu-phonetic.git
+cd pak-urdu-phonetic
+```
 
 2. Open `pak_urdu_phonetic.kpj` in Keyman Developer
 
@@ -99,7 +90,7 @@ pak-urdu-phonetic/
 │           ├── s3.png
 │           ├── s4.png
 │           └── welcome.htm               # Welcome instructions in HTML
-├── KMN-XKB-Converter/                     # Conversion utilities for my ease of use
+├── KMN-XKB-Converter/                     # Utilities for converting between Keyman .kmn and Linux XKB formats
 │   ├── kmn_to_xkb.py                      # Script to convert Keyman .kmn → XKB .xkb
 │   ├── xkb_to_kmn.py                      # Script to convert XKB .xkb → Keyman .kmn
 │   ├── keyboard.kmn                       # Sample/converted Keyman file
@@ -107,57 +98,21 @@ pak-urdu-phonetic/
 │   ├── kmn_xkb_compare.py                 # Comparison utility script
 │   └── kmn_xkb_compare.csv                # Comparison output data
 └── XKB/                                   # XKB (Linux) keyboard layout project
-    ├── HISTORY.md                         # XKB version history
-    ├── rules/
-    │   └── base.xml                       # XKB layout listing entry
-    └── symbols/
-        └── pk                             # XKB keyboard layout logic for 'pk'
+   ├── HISTORY.md                         # XKB version history
+   ├── rules/
+   │   └── base.xml                       # XKB layout listing entry
+   └── symbols/
+       └── pk                             # XKB keyboard layout logic for 'pk'
 ```
 
-## 🐛 Troubleshooting
+## 🤝 Contributing & Support
 
-### Common Issues
+Found a bug or have a suggestion? [Open an issue](../../issues) — include your OS and steps to reproduce.
 
-**Windows:**
-- **Keyman Desktop not opening**: Restart as administrator
-- **Keyboard not appearing**: Check if Keyman service is running
-- **Characters not typing**: Make sure keyboard is selected in Keyman Desktop
-
-**Linux:**
-- **Installation fails**: Check if you have proper permissions (`sudo` may be needed)
-- **Keyboard not available**: Restart your session after installation
-- **Input method not switching**: Check your desktop environment's keyboard settings
-
-### Getting Help
-
-If you encounter issues:
-1. Check the [Issues](../../issues) section for existing solutions
-2. Create a new issue with your system details
-3. Include screenshots if possible
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how you can help:
-
-1. **Report bugs**: Found a typing issue? [Open an issue](../../issues)
-2. **Suggest improvements**: Ideas for better functionality
-3. **Code contributions**: Fork, improve, and submit pull requests
-4. **Documentation**: Help improve this README or add tutorials
+PRs are welcome for bug fixes, new mappings, or documentation improvements.
 
 ## 📜 License
 
-MIT License - see [LICENSE](LICENSE) file for details.
+MIT License — see [LICENSE](LICENSE) file for details.
 
-**Credits:**
-- Original layout: [mBilalm](https://mbilalm.com/urdu-installer.php)
-- Linux port: [Nashit Ahmed Barq](https://github.com/nashitahmedbarq)
-
-## 🙏 Acknowledgments
-
-- **[mBilalm](https://mbilalm.com/urdu-installer.php)** for creating the original Windows Pak Urdu Installer
-- **Keyman team** for providing cross-platform keyboard tools
-- **Urdu computing community** for feedback and support
-
----
-
-**Made with ❤️ for the Urdu computing community**
+**Credits:** Original layout by [mBilalm](https://mbilalm.com/urdu-installer.php) · Linux/cross-platform port by [Nashit Ahmed Barq](https://github.com/nashitahmedbarq)
