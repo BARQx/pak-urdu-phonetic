@@ -37,7 +37,7 @@ Visit the official project page for complete step-by-step instructions and a vis
 | Platform | Status | Installation Method |
 |----------|--------|---------------------|
 | Windows 10/11 | ✅ Fully Supported | Keyman |
-| Linux (Ubuntu 26.04 LTS+) | ✅ Fully Supported | Native XKB (built-in) |
+| Linux (Ubuntu 26.04 LTS+) | ✅ Fully Supported | Keymand and Native XKB (built-in) |
 | Linux (older distros) | ✅ Fully Supported | Keyman |
 | macOS | ✅ Fully Supported | Keyman |
 
